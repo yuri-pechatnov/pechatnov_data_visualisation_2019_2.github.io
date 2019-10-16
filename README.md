@@ -454,7 +454,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 17044 bytes to README.md
+    [NbConvertApp] Writing 17083 bytes to README.md
 
 
 
@@ -463,7 +463,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to html
-    [NbConvertApp] Writing 351188 bytes to index.html
+    [NbConvertApp] Writing 351221 bytes to index.html
 
 
 
@@ -472,7 +472,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 17044 bytes to index.md
+    [NbConvertApp] Writing 17083 bytes to index.md
 
 
 
