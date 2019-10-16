@@ -2,7 +2,7 @@
 
 * Реализуем squarified treemap 
 * Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки
-* В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры внизу)
+* В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/)
 
 
 
@@ -452,7 +452,25 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 16345 bytes to README.md
+    [NbConvertApp] Writing 16401 bytes to README.md
+
+
+
+```python
+!jupyter nbconvert tree_map_1.ipynb --to html --output index
+```
+
+    [NbConvertApp] Converting notebook tree_map_1.ipynb to html
+    [NbConvertApp] Writing 350914 bytes to index.html
+
+
+
+```python
+!jupyter nbconvert tree_map_1.ipynb --to markdown --output index
+```
+
+    [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
+    [NbConvertApp] Writing 16889 bytes to index.md
 
 
 
