@@ -1,10 +1,10 @@
 # Squarified treemap inspired by Flamegraph
 
 * Репозиторий https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io
-* HTML v
+* HTML view (там отображаются картинки) https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/
 * Реализуем squarified treemap 
 * Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки
-* В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/)
+* В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу html-ки)
 
 
 
@@ -67,7 +67,7 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
 
     {'~/.config': 11132928,
      '~/Music': 0,
-     '~/datavis': 13807616,
+     '~/datavis': 13844480,
      '~/.DS_Store': 16384,
      '~/VirtualBox VMs': {'~/VirtualBox VMs/.DS_Store': 8192,
       '~/VirtualBox VMs/Ubuntu': {'~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev': 8192,
@@ -454,7 +454,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 16941 bytes to README.md
+    [NbConvertApp] Writing 17044 bytes to README.md
 
 
 
@@ -463,7 +463,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to html
-    [NbConvertApp] Writing 350971 bytes to index.html
+    [NbConvertApp] Writing 351188 bytes to index.html
 
 
 
@@ -472,7 +472,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 16941 bytes to index.md
+    [NbConvertApp] Writing 17044 bytes to index.md
 
 
 

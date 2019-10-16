@@ -13079,10 +13079,10 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Squarified-treemap-inspired-by-Flamegraph">Squarified treemap inspired by Flamegraph<a class="anchor-link" href="#Squarified-treemap-inspired-by-Flamegraph">&#182;</a></h1><ul>
 <li>Репозиторий <a href="https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io">https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io</a></li>
-<li>HTML v</li>
+<li>HTML view (там отображаются картинки) <a href="https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/">https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/</a></li>
 <li>Реализуем squarified treemap </li>
 <li>Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки</li>
-<li>В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу <a href="https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/">https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/</a>)</li>
+<li>В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу html-ки)</li>
 </ul>
 
 </div>
@@ -13189,7 +13189,7 @@ div#notebook {
 <div class="output_text output_subarea ">
 <pre>{&#39;~/.config&#39;: 11132928,
  &#39;~/Music&#39;: 0,
- &#39;~/datavis&#39;: 13807616,
+ &#39;~/datavis&#39;: 13844480,
  &#39;~/.DS_Store&#39;: 16384,
  &#39;~/VirtualBox VMs&#39;: {&#39;~/VirtualBox VMs/.DS_Store&#39;: 8192,
   &#39;~/VirtualBox VMs/Ubuntu&#39;: {&#39;~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev&#39;: 8192,
@@ -13314,7 +13314,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">lxml</span> <span class="k">import</span> <span class="n">etree</span>
@@ -13592,7 +13592,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;~/&quot;</span><span class="p">,</span> <span class="s2">&quot;./home.svg&quot;</span><span class="p">)</span>
@@ -13624,7 +13624,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;./parent.svg&quot;</span><span class="p">)</span>
@@ -13656,7 +13656,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert tree_map_1.ipynb --to markdown --output README
@@ -13677,7 +13677,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-[NbConvertApp] Writing 16941 bytes to README.md
+[NbConvertApp] Writing 17044 bytes to README.md
 </pre>
 </div>
 </div>
@@ -13688,7 +13688,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert tree_map_1.ipynb --to html --output index
@@ -13709,7 +13709,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook tree_map_1.ipynb to html
-[NbConvertApp] Writing 350971 bytes to index.html
+[NbConvertApp] Writing 351188 bytes to index.html
 </pre>
 </div>
 </div>
@@ -13720,7 +13720,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert tree_map_1.ipynb --to markdown --output index
@@ -13741,7 +13741,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-[NbConvertApp] Writing 16941 bytes to index.md
+[NbConvertApp] Writing 17044 bytes to index.md
 </pre>
 </div>
 </div>
