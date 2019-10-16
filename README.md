@@ -2,6 +2,8 @@
 
 * Репозиторий https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io
 * HTML view (там отображаются картинки) https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/
+
+
 * Реализуем squarified treemap 
 * Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки
 * В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу html-ки)
@@ -67,7 +69,7 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
 
     {'~/.config': 11132928,
      '~/Music': 0,
-     '~/datavis': 14168064,
+     '~/datavis': 14188544,
      '~/.DS_Store': 16384,
      '~/VirtualBox VMs': {'~/VirtualBox VMs/.DS_Store': 8192,
       '~/VirtualBox VMs/Ubuntu': {'~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev': 8192,
@@ -81,7 +83,7 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
      '~/training': 12288,
      '~/Pictures': 0,
      '~/jup': 8192,
-     '~/.ipython': 4263936,
+     '~/.ipython': 5312512,
      '~/Desktop': 8192,
      '~/Library': 0,
      '~/.matplotlib': 110592,
@@ -468,12 +470,8 @@ test_on_dir("..", "./parent.svg")
 
 
 ```python
-!jupyter nbconvert tree_map_1.ipynb --to markdown --output index
+
 ```
-
-    [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 17150 bytes to index.md
-
 
 
 ```python
