@@ -1,5 +1,7 @@
 # Squarified treemap inspired by Flamegraph
 
+* Репозиторий https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io
+* HTML v
 * Реализуем squarified treemap 
 * Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки
 * В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/)
@@ -65,7 +67,7 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
 
     {'~/.config': 11132928,
      '~/Music': 0,
-     '~/datavis': 10113024,
+     '~/datavis': 13807616,
      '~/.DS_Store': 16384,
      '~/VirtualBox VMs': {'~/VirtualBox VMs/.DS_Store': 8192,
       '~/VirtualBox VMs/Ubuntu': {'~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev': 8192,
@@ -404,7 +406,7 @@ class SquarifiedTreeMap(object):
 
 
 def show_svg(svg_path):
-    display(HTML('<object type="image/svg+xml" data="{path}"/>'.format(path=svg_path)))
+    display(HTML('<object type="image/svg+xml" data="{path}"> ??? </object>'.format(path=svg_path)))
         
 def get_all_keys(d):
     if not isinstance(d, dict):
@@ -425,7 +427,7 @@ test_on_dir("~/Downloads", "./downloads.svg")
 ```
 
 
-<object type="image/svg+xml" data="./downloads.svg"/>
+<object type="image/svg+xml" data="./downloads.svg"> ??? </object>
 
 
 
@@ -434,7 +436,7 @@ test_on_dir("~/", "./home.svg")
 ```
 
 
-<object type="image/svg+xml" data="./home.svg"/>
+<object type="image/svg+xml" data="./home.svg"> ??? </object>
 
 
 
@@ -443,7 +445,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
 
-<object type="image/svg+xml" data="./parent.svg"/>
+<object type="image/svg+xml" data="./parent.svg"> ??? </object>
 
 
 
@@ -452,7 +454,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 16401 bytes to README.md
+    [NbConvertApp] Writing 16941 bytes to README.md
 
 
 
@@ -461,7 +463,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to html
-    [NbConvertApp] Writing 350914 bytes to index.html
+    [NbConvertApp] Writing 350971 bytes to index.html
 
 
 
@@ -470,7 +472,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 16889 bytes to index.md
+    [NbConvertApp] Writing 16941 bytes to index.md
 
 
 

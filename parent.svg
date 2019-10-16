@@ -62,142 +62,513 @@ function g_to_text(e) {
     <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
       <g>
         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+          <title>../pechatnov_data_visualisation_2019_2.github.io/fgraph.svg (1.66 M)</title>
+          <rect fill="url(#radGrad)" x="4" y="4" height="246.9080883026398" width="141.57272438955496" stroke="rgb(0,0,0)"/>
+          <rect fill="none" x="6" y="6" height="242.9080883026398" width="137.57272438955496" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          <text fill="rgb(0,0,0)" text-anchor="" x="43.28636219477748" y="131.0540441513199" font-size="12" font-family="Verdana,monospace">fgraph.svg</text>
+        </g>
+        <g>
+          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+            <title>../pechatnov_data_visualisation_2019_2.github.io/tree_map.ipynb (412.00 K)</title>
+            <rect fill="url(#radGrad)" x="145.57272438955496" y="4" height="110.56441092571588" width="76.4411436065736" stroke="rgb(0,0,0)"/>
+            <rect fill="none" x="147.57272438955496" y="6" height="106.56441092571588" width="72.4411436065736" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <text fill="rgb(0,0,0)" text-anchor="" x="152.29329619284175" y="62.88220546285794" font-size="12" font-family="Verdana,monospace">tree_ma...</text>
+          </g>
+          <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
+            <g>
+              <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
+                <g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/04 (68.00 K)</title>
+                    <rect fill="url(#radGrad)" x="224.01386799612857" y="6" height="39.9982963170217" width="31.39661631998254" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="226.01386799612857" y="8" height="35.9982963170217" width="27.39661631998254" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="232.21217615611982" y="29.59914815851085" font-size="12" font-family="Verdana,monospace">04</text>
+                  </g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/09 (68.00 K)</title>
+                    <rect fill="url(#radGrad)" x="255.4104843161111" y="6" height="39.9982963170217" width="31.39661631998254" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="257.41048431611114" y="8" height="35.9982963170217" width="27.39661631998254" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="263.6087924761024" y="29.59914815851085" font-size="12" font-family="Verdana,monospace">09</text>
+                  </g>
+                  <g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/b5 (20.00 K)</title>
+                      <rect fill="url(#radGrad)" x="224.01386799612857" y="45.9982963170217" height="24.263672757208354" width="15.222601626873029" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="226.01386799612857" y="47.9982963170217" height="20.263672757208354" width="11.222601626873029" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="230.12516880956508" y="61.730132695625876" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/07 (12.00 K)</title>
+                      <rect fill="url(#radGrad)" x="224.01386799612857" y="70.26196907423005" height="14.558203654325013" width="15.222601626873029" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="226.01386799612857" y="72.26196907423005" height="10.558203654325013" width="11.222601626873029" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="230.12516880956508" y="81.14107090139255" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/bd (8.00 K)</title>
+                        <rect fill="url(#radGrad)" x="239.2364696230016" y="45.9982963170217" height="12.940625470511122" width="11.416951220154772" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="241.2364696230016" y="47.9982963170217" height="8.940625470511122" width="7.416951220154772" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="243.44494523307898" y="56.06860905227726" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/f3 (8.00 K)</title>
+                        <rect fill="url(#radGrad)" x="239.2364696230016" y="58.93892178753282" height="12.940625470511122" width="11.416951220154772" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="241.2364696230016" y="60.93892178753282" height="8.940625470511122" width="7.416951220154772" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="243.44494523307898" y="69.00923452278838" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/e4 (8.00 K)</title>
+                        <rect fill="url(#radGrad)" x="239.2364696230016" y="71.87954725804394" height="12.940625470511122" width="11.416951220154772" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="241.2364696230016" y="73.87954725804394" height="8.940625470511122" width="7.416951220154772" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="243.44494523307898" y="81.9498599932995" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/4e (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="250.65342084315637" y="45.9982963170217" height="12.259539604373515" width="12.05122659764578" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="252.65342084315637" y="47.9982963170217" height="8.259539604373515" width="8.05122659764578" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="255.1790341419793" y="55.72806611920846" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/27 (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="262.70464744080215" y="45.9982963170217" height="12.259539604373515" width="12.05122659764578" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="264.70464744080215" y="47.9982963170217" height="8.259539604373515" width="8.05122659764578" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="267.230260739625" y="55.72806611920846" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/6b (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="274.7558740384479" y="45.9982963170217" height="12.259539604373515" width="12.05122659764578" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="276.7558740384479" y="47.9982963170217" height="8.259539604373515" width="8.05122659764578" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="279.28148733727085" y="55.72806611920846" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g>
+                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                            <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/98 (8.00 K)</title>
+                            <rect fill="url(#radGrad)" x="250.65342084315637" y="58.25783592139521" height="13.281168403579926" width="11.124208749231286" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="252.65342084315637" y="60.25783592139521" height="9.281168403579926" width="7.124208749231286" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="254.71552521777198" y="68.49842012318517" font-size="12" font-family="Verdana,monospace"></text>
+                          </g>
+                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                            <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/70 (8.00 K)</title>
+                            <rect fill="url(#radGrad)" x="250.65342084315637" y="71.53900432497514" height="13.281168403579926" width="11.124208749231286" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="252.65342084315637" y="73.53900432497514" height="9.281168403579926" width="7.124208749231286" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="254.71552521777198" y="81.7795885267651" font-size="12" font-family="Verdana,monospace"></text>
+                          </g>
+                          <g>
+                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                              <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/95 (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="261.77762959238765" y="58.25783592139521" height="8.854111788686978" width="8.343157014568646" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="263.77762959238765" y="60.25783592139521" height="4.8541117886869785" width="4.3431570145686464" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="264.449208099672" y="66.2848918157387" font-size="12" font-family="Verdana,monospace"></text>
+                            </g>
+                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                              <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/92 (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="270.1207866069563" y="58.25783592139521" height="8.854111788686978" width="8.343157014568646" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="272.1207866069563" y="60.25783592139521" height="4.8541117886869785" width="4.3431570145686464" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="272.7923651142406" y="66.2848918157387" font-size="12" font-family="Verdana,monospace"></text>
+                            </g>
+                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                              <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/67 (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="278.46394362152495" y="58.25783592139521" height="8.854111788686978" width="8.343157014568646" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="280.46394362152495" y="60.25783592139521" height="4.8541117886869785" width="4.3431570145686464" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="281.13552212880927" y="66.2848918157387" font-size="12" font-family="Verdana,monospace"></text>
+                            </g>
+                            <g>
+                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/d8 (4.00 K)</title>
+                                <rect fill="url(#radGrad)" x="261.77762959238765" y="67.11194771008219" height="8.85411250923643" width="8.343156335600838" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="263.77762959238765" y="69.11194771008219" height="4.85411250923643" width="4.343156335600838" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="264.4492077601881" y="75.13900396470041" font-size="12" font-family="Verdana,monospace"></text>
+                              </g>
+                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/ab (4.00 K)</title>
+                                <rect fill="url(#radGrad)" x="261.77762959238765" y="75.96606021931862" height="8.85411250923643" width="8.343156335600838" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="263.77762959238765" y="77.96606021931862" height="4.85411250923643" width="4.343156335600838" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="264.4492077601881" y="83.99311647393682" font-size="12" font-family="Verdana,monospace"></text>
+                              </g>
+                              <g>
+                                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                  <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/37 (4.00 K)</title>
+                                  <rect fill="url(#radGrad)" x="270.1207859279885" y="67.11194771008219" height="8.854111428412281" width="8.343157354052607" stroke="rgb(0,0,0)"/>
+                                  <rect fill="none" x="272.1207859279885" y="69.11194771008219" height="4.854111428412281" width="4.343157354052607" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                  <text fill="rgb(0,0,0)" text-anchor="" x="272.79236460501477" y="75.13900342428832" font-size="12" font-family="Verdana,monospace"></text>
+                                </g>
+                                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                  <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/08 (4.00 K)</title>
+                                  <rect fill="url(#radGrad)" x="278.4639432820411" y="67.11194771008219" height="8.854111428412281" width="8.34315735405255" stroke="rgb(0,0,0)"/>
+                                  <rect fill="none" x="280.4639432820411" y="69.11194771008219" height="4.854111428412281" width="4.3431573540525505" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                  <text fill="rgb(0,0,0)" text-anchor="" x="281.1355219590674" y="75.13900342428832" font-size="12" font-family="Verdana,monospace"></text>
+                                </g>
+                                <g>
+                                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                    <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/d4 (4.00 K)</title>
+                                    <rect fill="url(#radGrad)" x="270.1207859279885" y="75.96605913849447" height="8.854113590060578" width="8.34315531714941" stroke="rgb(0,0,0)"/>
+                                    <rect fill="none" x="272.1207859279885" y="77.96605913849447" height="4.854113590060578" width="4.34315531714941" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                    <text fill="rgb(0,0,0)" text-anchor="" x="272.79236358656317" y="83.99311593352476" font-size="12" font-family="Verdana,monospace"></text>
+                                  </g>
+                                  <g>
+                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                      <title>../pechatnov_data_visualisation_2019_2.github.io/.git/objects/41 (4.00 K)</title>
+                                      <rect fill="url(#radGrad)" x="278.4639412451379" y="75.96605913849447" height="8.854109266765036" width="8.343159390955748" stroke="rgb(0,0,0)"/>
+                                      <rect fill="none" x="280.4639412451379" y="77.96605913849447" height="4.854109266765036" width="4.343159390955748" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                      <text fill="rgb(0,0,0)" text-anchor="" x="281.1355209406158" y="83.99311377187698" font-size="12" font-family="Verdana,monospace"></text>
+                                    </g>
+                                    <g/>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect fill="none" x="223.01386799612857" y="5" height="80.82017272855505" width="64.79323263996508" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <rect fill="none" x="225.01386799612857" y="7" height="76.82017272855505" width="60.79323263996508" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              </g>
+              <g>
+                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                  <title>../pechatnov_data_visualisation_2019_2.github.io/.git/hooks (48.00 K)</title>
+                  <rect fill="url(#radGrad)" x="223.01386799612857" y="85.82017272855505" height="27.744238197160826" width="33.80516485563396" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="225.01386799612857" y="87.82017272855505" height="23.744238197160826" width="29.80516485563396" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="226.41645042394555" y="103.29229182713546" font-size="12" font-family="Verdana,monospace">h...</text>
+                </g>
+                <g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/.git/logs (12.00 K)</title>
+                    <rect fill="url(#radGrad)" x="256.81903285176253" y="85.82017272855505" height="16.64654291829649" width="14.085485356514141" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="258.81903285176253" y="87.82017272855505" height="12.64654291829649" width="10.085485356514141" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="262.3617755300196" y="97.74344418770329" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/.git/refs (8.00 K)</title>
+                    <rect fill="url(#radGrad)" x="256.81903285176253" y="102.46671564685154" height="11.097695278864322" width="14.085485356514141" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="258.81903285176253" y="104.46671564685154" height="7.097695278864322" width="10.085485356514141" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="262.3617755300196" y="111.6155632862837" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/.git/config (4.00 K)</title>
+                      <rect fill="url(#radGrad)" x="270.90451820827667" y="85.82017272855505" height="9.248079399053609" width="8.451291213908519" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="272.90451820827667" y="87.82017272855505" height="5.2480793990536085" width="4.451291213908519" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="273.63016381523096" y="94.04421242808185" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/.git/HEAD (4.00 K)</title>
+                      <rect fill="url(#radGrad)" x="279.3558094221852" y="85.82017272855505" height="9.248079399053609" width="8.451291213908462" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="281.3558094221852" y="87.82017272855505" height="5.2480793990536085" width="4.451291213908462" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="282.0814550291394" y="94.04421242808185" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/.git/info (4.00 K)</title>
+                        <rect fill="url(#radGrad)" x="270.90451820827667" y="95.06825212760866" height="9.248079399053609" width="8.451291213908519" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="272.90451820827667" y="97.06825212760866" height="5.2480793990536085" width="4.451291213908519" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="273.63016381523096" y="103.29229182713546" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/.git/description (4.00 K)</title>
+                        <rect fill="url(#radGrad)" x="279.3558094221852" y="95.06825212760866" height="9.248079399053609" width="8.451291213908462" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="281.3558094221852" y="97.06825212760866" height="5.2480793990536085" width="4.451291213908462" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="282.0814550291394" y="103.29229182713546" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/.git/index (4.00 K)</title>
+                          <rect fill="url(#radGrad)" x="270.90451820827667" y="104.31633152666227" height="9.248079399053609" width="8.451291213908519" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="272.90451820827667" y="106.31633152666227" height="5.2480793990536085" width="4.451291213908519" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="273.63016381523096" y="112.54037122618907" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g>
+                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                            <title>../pechatnov_data_visualisation_2019_2.github.io/.git/COMMIT_EDITMSG (4.00 K)</title>
+                            <rect fill="url(#radGrad)" x="279.3558094221852" y="104.31633152666227" height="9.248079399053609" width="8.451291213908462" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="281.3558094221852" y="106.31633152666227" height="5.2480793990536085" width="4.451291213908462" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="282.0814550291394" y="112.54037122618907" font-size="12" font-family="Verdana,monospace"></text>
+                          </g>
+                          <g/>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <rect fill="none" x="222.01386799612857" y="4" height="110.56441092571588" width="66.79323263996508" stroke="rgb(0,0,0)" stroke-width="1"/>
+            <rect fill="none" x="224.01386799612857" y="6" height="106.56441092571588" width="62.79323263996508" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          </g>
+          <g>
+            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+              <title>../pechatnov_data_visualisation_2019_2.github.io/index.html (344.00 K)</title>
+              <rect fill="url(#radGrad)" x="145.57272438955496" y="114.56441092571588" height="94.56093753560855" width="74.62631367466719" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="147.57272438955496" y="116.56441092571588" height="90.56093753560855" width="70.62631367466719" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="151.38588122688856" y="165.44487969352014" font-size="12" font-family="Verdana,monospace">index.html</text>
+            </g>
+            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+              <title>../pechatnov_data_visualisation_2019_2.github.io/test33.svg (152.00 K)</title>
+              <rect fill="url(#radGrad)" x="145.57272438955496" y="209.12534846132442" height="41.78273984131542" width="74.62631367466719" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="147.57272438955496" y="211.12534846132442" height="37.78273984131542" width="70.62631367466719" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="151.38588122688856" y="233.6167183819821" font-size="12" font-family="Verdana,monospace">test33.svg</text>
+            </g>
+            <g>
+              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                <title>../pechatnov_data_visualisation_2019_2.github.io/downloads.svg (144.00 K)</title>
+                <rect fill="url(#radGrad)" x="220.19903806422215" y="114.56441092571588" height="43.05589811902861" width="68.60806257187144" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="222.19903806422215" y="116.56441092571588" height="39.05589811902861" width="64.60806257187144" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="226.0030693501579" y="139.69235998523018" font-size="12" font-family="Verdana,monospace">downlo...</text>
+              </g>
+              <g>
+                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                  <title>../pechatnov_data_visualisation_2019_2.github.io/home.svg (80.00 K)</title>
+                  <rect fill="url(#radGrad)" x="220.19903806422215" y="157.6203090447445" height="47.8398867989207" width="34.304031285935736" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="222.19903806422215" y="159.6203090447445" height="43.8398867989207" width="30.304031285935736" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="223.85105370719003" y="185.14025244420483" font-size="12" font-family="Verdana,monospace">h...</text>
+                </g>
+                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                  <title>../pechatnov_data_visualisation_2019_2.github.io/parent.svg (80.00 K)</title>
+                  <rect fill="url(#radGrad)" x="254.5030693501579" y="157.6203090447445" height="47.8398867989207" width="34.30403128593571" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="256.5030693501579" y="159.6203090447445" height="43.8398867989207" width="30.304031285935707" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="258.15508499312574" y="185.14025244420483" font-size="12" font-family="Verdana,monospace">p...</text>
+                </g>
+                <g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/tree_map_1.ipynb (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="220.19903806422215" y="205.4601958436652" height="22.723946229487325" width="21.66570397006467" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="222.19903806422215" y="207.4601958436652" height="18.723946229487325" width="17.66570397006467" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="229.53189004925449" y="220.42216895840883" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../pechatnov_data_visualisation_2019_2.github.io/.ipynb_checkpoints (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="220.19903806422215" y="228.18414207315251" height="22.723946229487325" width="21.66570397006467" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="222.19903806422215" y="230.18414207315251" height="18.723946229487325" width="17.66570397006467" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="229.53189004925449" y="243.14611518789619" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/README.md (20.00 K)</title>
+                      <rect fill="url(#radGrad)" x="241.86474203428682" y="205.4601958436652" height="22.723946229487325" width="18.054753308387234" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="243.86474203428682" y="207.4601958436652" height="18.723946229487325" width="14.054753308387234" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="249.39211868848042" y="220.42216895840883" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../pechatnov_data_visualisation_2019_2.github.io/index.md (20.00 K)</title>
+                      <rect fill="url(#radGrad)" x="241.86474203428682" y="228.18414207315251" height="22.723946229487325" width="18.054753308387234" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="243.86474203428682" y="230.18414207315251" height="18.723946229487325" width="14.054753308387234" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="249.39211868848042" y="243.14611518789619" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/test32.svg (12.00 K)</title>
+                        <rect fill="url(#radGrad)" x="259.91949534267405" y="205.4601958436652" height="17.0429596721155" width="14.443802646709798" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="261.91949534267405" y="207.4601958436652" height="13.0429596721155" width="10.443802646709798" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="265.641396666029" y="217.58167567972293" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../pechatnov_data_visualisation_2019_2.github.io/dest (12.00 K)</title>
+                        <rect fill="url(#radGrad)" x="274.36329798938385" y="205.4601958436652" height="17.0429596721155" width="14.443802646709798" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="276.36329798938385" y="207.4601958436652" height="13.0429596721155" width="10.443802646709798" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="280.0851993127387" y="217.58167567972293" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/test34.svg (12.00 K)</title>
+                          <rect fill="url(#radGrad)" x="259.91949534267405" y="222.5031555157807" height="17.0429596721155" width="14.443802646709798" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="261.91949534267405" y="224.5031555157807" height="13.0429596721155" width="10.443802646709798" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="265.641396666029" y="234.62463535183844" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                          <title>../pechatnov_data_visualisation_2019_2.github.io/test3.svg (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="259.91949534267405" y="239.5461151878962" height="11.361973114743648" width="14.443802646709798" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="261.91949534267405" y="241.5461151878962" height="7.361973114743648" width="10.443802646709798" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="265.641396666029" y="248.827101745268" font-size="12" font-family="Verdana,monospace"></text>
+                        </g>
+                        <g>
+                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                            <title>../pechatnov_data_visualisation_2019_2.github.io/test2.svg (4.00 K)</title>
+                            <rect fill="url(#radGrad)" x="274.36329798938385" y="222.5031555157807" height="11.361973114743648" width="7.221901323354871" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="276.36329798938385" y="224.5031555157807" height="7.361973114743648" width="3.221901323354871" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="276.4742486510613" y="231.7841420731525" font-size="12" font-family="Verdana,monospace"></text>
+                          </g>
+                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                            <title>../pechatnov_data_visualisation_2019_2.github.io/script.js (4.00 K)</title>
+                            <rect fill="url(#radGrad)" x="281.5851993127387" y="222.5031555157807" height="11.361973114743648" width="7.221901323354871" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="283.5851993127387" y="224.5031555157807" height="7.361973114743648" width="3.221901323354871" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="283.69614997441613" y="231.7841420731525" font-size="12" font-family="Verdana,monospace"></text>
+                          </g>
+                          <g>
+                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                              <title>../pechatnov_data_visualisation_2019_2.github.io/.gitignore (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="274.36329798938385" y="233.86512863052434" height="11.361973114743677" width="7.221901323354871" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="276.36329798938385" y="235.86512863052434" height="7.361973114743677" width="3.221901323354871" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="276.4742486510613" y="243.14611518789619" font-size="12" font-family="Verdana,monospace"></text>
+                            </g>
+                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                              <title>../pechatnov_data_visualisation_2019_2.github.io/a.svg (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="281.5851993127387" y="233.86512863052434" height="11.361973114743677" width="7.221901323354871" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="283.5851993127387" y="235.86512863052434" height="7.361973114743677" width="3.221901323354871" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="283.69614997441613" y="243.14611518789619" font-size="12" font-family="Verdana,monospace"></text>
+                            </g>
+                            <g>
+                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                <title>../pechatnov_data_visualisation_2019_2.github.io/test.svg (4.00 K)</title>
+                                <rect fill="url(#radGrad)" x="274.36329798938385" y="245.22710174526802" height="5.680986557371824" width="14.443802646709742" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="276.36329798938385" y="247.22710174526802" height="1.6809865573718241" width="10.443802646709742" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="280.0851993127387" y="251.6675950239539" font-size="12" font-family="Verdana,monospace"></text>
+                              </g>
+                              <g/>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <rect fill="none" x="3" y="3" height="248.90808830263984" width="286.8071006360936" stroke="rgb(0,0,0)" stroke-width="1"/>
+      <rect fill="none" x="5" y="5" height="244.90808830263984" width="282.8071006360936" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+    </g>
+    <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
+      <g>
+        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
           <title>../treemap/fgraph.svg (1.66 M)</title>
-          <rect fill="url(#radGrad)" x="4" y="4" height="246.88211377997138" width="194.09156431353765" stroke="rgb(0,0,0)"/>
-          <rect fill="none" x="6" y="6" height="242.88211377997138" width="190.09156431353765" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-          <text fill="rgb(0,0,0)" text-anchor="" x="69.54578215676882" y="131.0410568899857" font-size="12" font-family="Verdana,monospace">fgraph.svg</text>
+          <rect fill="url(#radGrad)" x="4" y="252.90808830263984" height="223.09191169736027" width="156.55203209158174" stroke="rgb(0,0,0)"/>
+          <rect fill="none" x="6" y="254.90808830263984" height="219.09191169736027" width="152.55203209158174" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          <text fill="rgb(0,0,0)" text-anchor="" x="50.77601604579087" y="368.05404415132" font-size="12" font-family="Verdana,monospace">fgraph.svg</text>
         </g>
         <g>
           <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>../treemap/.ipynb_checkpoints/tree_map-checkpoint.ipynb (448.00 K)</title>
-                <rect fill="url(#radGrad)" x="199.09156431353765" y="5" height="81.47303560468947" width="149.02576322685522" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="201.09156431353765" y="7" height="77.47303560468947" width="145.02576322685522" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="209.10444592696524" y="49.33651780234474" font-size="12" font-family="Verdana,monospace">tree_map-checkpoin...</text>
+                <rect fill="url(#radGrad)" x="161.55203209158174" y="253.90808830263984" height="73.42935696357739" width="119.8353192964858" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="163.55203209158174" y="255.90808830263984" height="69.42935696357739" width="115.8353192964858" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="168.96969173982464" y="294.2227667844286" font-size="12" font-family="Verdana,monospace">tree_map-check...</text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>../treemap/.ipynb_checkpoints/tree_map_1-checkpoint.ipynb (24.00 K)</title>
-                  <rect fill="url(#radGrad)" x="348.11732754039286" y="5" height="81.47303560468946" width="7.983523030010133" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="350.11732754039286" y="7" height="77.47303560468946" width="3.983523030010133" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="350.60908905539793" y="49.33651780234473" font-size="12" font-family="Verdana,monospace"></text>
+                  <rect fill="url(#radGrad)" x="281.38735138806754" y="253.90808830263984" height="73.42935696357739" width="6.419749248026051" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="283.38735138806754" y="255.90808830263984" height="69.42935696357739" width="2.4197492480260507" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="283.38735138806754" y="294.2227667844286" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g/>
               </g>
             </g>
-            <rect fill="none" x="198.09156431353765" y="4" height="83.47303560468946" width="159.00928625686535" stroke="rgb(0,0,0)" stroke-width="1"/>
-            <rect fill="none" x="200.09156431353765" y="6" height="79.47303560468946" width="155.00928625686535" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <rect fill="none" x="160.55203209158174" y="252.90808830263984" height="75.42935696357739" width="128.25506854451186" stroke="rgb(0,0,0)" stroke-width="1"/>
+            <rect fill="none" x="162.55203209158174" y="254.90808830263984" height="71.42935696357739" width="124.25506854451186" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
           </g>
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
               <title>../treemap/tree_map.ipynb (412.00 K)</title>
-              <rect fill="url(#radGrad)" x="198.09156431353765" y="87.47303560468946" height="72.86205650239843" width="159.00928625686535" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="200.09156431353765" y="89.47303560468946" height="68.86205650239843" width="155.00928625686535" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="234.0962074419703" y="127.50406385588866" font-size="12" font-family="Verdana,monospace">tree_map.ipynb</text>
+              <rect fill="url(#radGrad)" x="160.55203209158174" y="328.33744526621723" height="65.84087938346164" width="128.25506854451186" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="162.55203209158174" y="330.33744526621723" height="61.84087938346164" width="124.25506854451186" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="181.17956636383767" y="364.85788495794804" font-size="12" font-family="Verdana,monospace">tree_map.ipynb</text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>../treemap/test33.svg (152.00 K)</title>
-                <rect fill="url(#radGrad)" x="198.09156431353765" y="160.3350921070879" height="90.54702167288349" width="47.20588185750691" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="200.09156431353765" y="162.3350921070879" height="86.54702167288349" width="43.20588185750691" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="202.1945052422911" y="209.20860294352963" font-size="12" font-family="Verdana,monospace">tes...</text>
+                <rect fill="url(#radGrad)" x="160.55203209158174" y="394.17832464967887" height="42.016535990705506" width="74.14746150229593" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="162.55203209158174" y="396.17832464967887" height="38.016535990705506" width="70.14746150229593" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="166.1257628427297" y="418.78659264503165" font-size="12" font-family="Verdana,monospace">test33.svg</text>
+              </g>
+              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                <title>../treemap/downloads.svg (144.00 K)</title>
+                <rect fill="url(#radGrad)" x="160.55203209158174" y="436.1948606403844" height="39.80513935961574" width="74.14746150229593" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="162.55203209158174" y="438.1948606403844" height="35.80513935961574" width="70.14746150229593" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="166.1257628427297" y="459.69743032019227" font-size="12" font-family="Verdana,monospace">downloa...</text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                  <title>../treemap/downloads.svg (144.00 K)</title>
-                  <rect fill="url(#radGrad)" x="245.29744617104456" y="160.3350921070879" height="90.54702167288349" width="44.72136175974339" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="247.29744617104456" y="162.3350921070879" height="86.54702167288349" width="40.72136175974339" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="248.15812705091628" y="209.20860294352963" font-size="12" font-family="Verdana,monospace">dow...</text>
+                  <title>../treemap/home.svg (80.00 K)</title>
+                  <rect fill="url(#radGrad)" x="234.69949359387766" y="394.17832464967887" height="30.30432420382266" width="54.10760704221593" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="236.69949359387766" y="396.17832464967887" height="26.30432420382266" width="50.10760704221593" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="239.25329711498563" y="412.93048675159025" font-size="12" font-family="Verdana,monospace">home...</text>
                 </g>
                 <g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>../treemap/home.svg (80.00 K)</title>
-                    <rect fill="url(#radGrad)" x="290.01880793078794" y="160.3350921070879" height="33.535933952919805" width="67.08204263961505" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="292.01880793078794" y="162.3350921070879" height="29.535933952919805" width="63.082042639615054" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="298.0598292505955" y="180.7030590835478" font-size="12" font-family="Verdana,monospace">home.svg</text>
+                    <title>../treemap/tree_map_1.ipynb (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="234.69949359387766" y="424.48264885350153" height="25.75867557324932" width="19.096802485487984" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="236.69949359387766" y="426.48264885350153" height="21.75867557324932" width="15.096802485487984" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="242.74789483662164" y="440.9619866401262" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../treemap/parent.svg (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="234.69949359387766" y="450.24132442675085" height="25.75867557324932" width="19.096802485487984" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="236.69949359387766" y="452.24132442675085" height="21.75867557324932" width="15.096802485487984" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="242.74789483662164" y="466.72066221337553" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>../treemap/tree_map_1.ipynb (24.00 K)</title>
-                      <rect fill="url(#radGrad)" x="290.01880793078794" y="193.8710260600077" height="28.505543859981856" width="23.676015049275918" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="292.01880793078794" y="195.8710260600077" height="24.505543859981856" width="19.676015049275918" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="300.35681545542593" y="211.72379798999862" font-size="12" font-family="Verdana,monospace"></text>
+                      <title>../treemap/README.md (20.00 K)</title>
+                      <rect fill="url(#radGrad)" x="253.79629607936565" y="424.48264885350153" height="18.73358223509041" width="21.88175284795497" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="255.79629607936565" y="426.48264885350153" height="14.73358223509041" width="17.88175284795497" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="263.2371725033431" y="437.4494399710468" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>../treemap/parent.svg (24.00 K)</title>
-                      <rect fill="url(#radGrad)" x="290.01880793078794" y="222.37656991998955" height="28.505543859981856" width="23.676015049275918" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="292.01880793078794" y="224.37656991998955" height="24.505543859981856" width="19.676015049275918" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="300.35681545542593" y="240.22934184998047" font-size="12" font-family="Verdana,monospace"></text>
+                      <title>../treemap/test32.svg (12.00 K)</title>
+                      <rect fill="url(#radGrad)" x="275.6780489273206" y="424.48264885350153" height="18.73358223509041" width="13.129051708772977" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="277.6780489273206" y="426.48264885350153" height="14.73358223509041" width="9.129051708772977" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="280.7425747817071" y="437.4494399710468" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>../treemap/README.md (20.00 K)</title>
-                        <rect fill="url(#radGrad)" x="313.69482298006386" y="193.8710260600077" height="20.73130462544134" width="27.12876724396193" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="315.69482298006386" y="195.8710260600077" height="16.73130462544134" width="23.12876724396193" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="325.75920660204486" y="207.83667837272836" font-size="12" font-family="Verdana,monospace"></text>
+                        <title>../treemap/dest (12.00 K)</title>
+                        <rect fill="url(#radGrad)" x="253.79629607936565" y="443.21623108859194" height="16.391884455704087" width="15.004630524311978" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="255.79629607936565" y="445.21623108859194" height="12.391884455704087" width="11.004630524311978" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="259.7986113415216" y="455.012173316444" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>../treemap/test32.svg (12.00 K)</title>
-                        <rect fill="url(#radGrad)" x="340.8235902240258" y="193.8710260600077" height="20.73130462544134" width="16.277260346377147" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="342.8235902240258" y="195.8710260600077" height="16.73130462544134" width="12.277260346377147" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="347.46222039721437" y="207.83667837272836" font-size="12" font-family="Verdana,monospace"></text>
+                        <title>../treemap/test34.svg (12.00 K)</title>
+                        <rect fill="url(#radGrad)" x="253.79629607936565" y="459.608115544296" height="16.391884455704087" width="15.004630524311978" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="255.79629607936565" y="461.608115544296" height="12.391884455704087" width="11.004630524311978" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="259.7986113415216" y="471.4040577721481" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>../treemap/dest (12.00 K)</title>
-                          <rect fill="url(#radGrad)" x="313.69482298006386" y="214.60233068544903" height="18.139891547261186" width="18.60258325300248" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="315.69482298006386" y="216.60233068544903" height="14.139891547261186" width="14.602583253002479" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="321.49611460656513" y="227.27227645907962" font-size="12" font-family="Verdana,monospace"></text>
+                          <title>../treemap/test3.svg (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="268.8009266036776" y="443.21623108859194" height="16.391884455704087" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="270.8009266036776" y="445.21623108859194" height="12.391884455704087" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="272.30247011178164" y="455.012173316444" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>../treemap/test34.svg (12.00 K)</title>
-                          <rect fill="url(#radGrad)" x="313.69482298006386" y="232.74222223271022" height="18.139891547261186" width="18.60258325300248" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="315.69482298006386" y="234.74222223271022" height="14.139891547261186" width="14.602583253002479" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="321.49611460656513" y="245.4121680063408" font-size="12" font-family="Verdana,monospace"></text>
+                          <title>../treemap/.DS_Store (8.00 K)</title>
+                          <rect fill="url(#radGrad)" x="278.8040136198856" y="443.21623108859194" height="16.391884455704087" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="280.8040136198856" y="445.21623108859194" height="12.391884455704087" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="282.3055571279896" y="455.012173316444" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>../treemap/test3.svg (8.00 K)</title>
-                            <rect fill="url(#radGrad)" x="332.29740623306634" y="214.60233068544903" height="18.139891547261186" width="12.401722168668357" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="334.29740623306634" y="216.60233068544903" height="14.139891547261186" width="8.401722168668357" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="336.9982673174005" y="227.27227645907962" font-size="12" font-family="Verdana,monospace"></text>
+                            <title>../treemap/test2.svg (4.00 K)</title>
+                            <rect fill="url(#radGrad)" x="268.8009266036776" y="459.608115544296" height="8.195942227852072" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="270.8009266036776" y="461.608115544296" height="4.195942227852072" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="272.30247011178164" y="467.30608665822206" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>../treemap/.DS_Store (8.00 K)</title>
-                            <rect fill="url(#radGrad)" x="344.6991284017347" y="214.60233068544903" height="18.139891547261186" width="12.401722168668357" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="346.6991284017347" y="216.60233068544903" height="14.139891547261186" width="8.401722168668357" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="349.3999894860689" y="227.27227645907962" font-size="12" font-family="Verdana,monospace"></text>
+                            <title>../treemap/script.js (4.00 K)</title>
+                            <rect fill="url(#radGrad)" x="268.8009266036776" y="467.8040577721481" height="8.195942227852015" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="270.8009266036776" y="469.8040577721481" height="4.195942227852015" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="272.30247011178164" y="475.50202888607413" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g>
                             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>../treemap/test2.svg (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="332.29740623306634" y="232.74222223271022" height="9.069945773630593" width="12.401722168668357" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="334.29740623306634" y="234.74222223271022" height="5.069945773630593" width="8.401722168668357" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="336.9982673174005" y="240.8771951195255" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>../treemap/script.js (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="332.29740623306634" y="241.8121680063408" height="9.069945773630593" width="12.401722168668357" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="334.29740623306634" y="243.8121680063408" height="5.069945773630593" width="8.401722168668357" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="336.9982673174005" y="249.9471408931561" font-size="12" font-family="Verdana,monospace"></text>
+                              <title>../treemap/a.svg (4.00 K)</title>
+                              <rect fill="url(#radGrad)" x="278.8040136198856" y="459.608115544296" height="8.195942227852072" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="280.8040136198856" y="461.608115544296" height="4.195942227852072" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="282.3055571279896" y="467.30608665822206" font-size="12" font-family="Verdana,monospace"></text>
                             </g>
                             <g>
                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                <title>../treemap/a.svg (4.00 K)</title>
-                                <rect fill="url(#radGrad)" x="344.6991284017347" y="232.74222223271022" height="9.069945773630593" width="12.4017221686683" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="346.6991284017347" y="234.74222223271022" height="5.069945773630593" width="8.4017221686683" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="349.3999894860689" y="240.8771951195255" font-size="12" font-family="Verdana,monospace"></text>
+                                <title>../treemap/test.svg (4.00 K)</title>
+                                <rect fill="url(#radGrad)" x="278.8040136198856" y="467.8040577721481" height="8.195942227852015" width="10.003087016207985" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="280.8040136198856" y="469.8040577721481" height="4.195942227852015" width="6.003087016207985" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="282.3055571279896" y="475.50202888607413" font-size="12" font-family="Verdana,monospace"></text>
                               </g>
-                              <g>
-                                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                  <title>../treemap/test.svg (4.00 K)</title>
-                                  <rect fill="url(#radGrad)" x="344.6991284017347" y="241.8121680063408" height="9.069945773630565" width="12.4017221686683" stroke="rgb(0,0,0)"/>
-                                  <rect fill="none" x="346.6991284017347" y="243.8121680063408" height="5.069945773630565" width="8.4017221686683" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                  <text fill="rgb(0,0,0)" text-anchor="" x="349.3999894860689" y="249.9471408931561" font-size="12" font-family="Verdana,monospace"></text>
-                                </g>
-                                <g/>
-                              </g>
+                              <g/>
                             </g>
                           </g>
                         </g>
@@ -210,210 +581,135 @@ function g_to_text(e) {
           </g>
         </g>
       </g>
-      <rect fill="none" x="3" y="3" height="248.88211377997138" width="355.100850570403" stroke="rgb(0,0,0)" stroke-width="1"/>
-      <rect fill="none" x="5" y="5" height="244.88211377997138" width="351.100850570403" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+      <rect fill="none" x="3" y="251.90808830263984" height="225.09191169736027" width="286.8071006360936" stroke="rgb(0,0,0)" stroke-width="1"/>
+      <rect fill="none" x="5" y="253.90808830263984" height="221.09191169736027" width="282.8071006360936" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
     </g>
-    <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
-      <g>
-        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-          <title>../data_visualisation_2019/fgraph.svg (1.66 M)</title>
-          <rect fill="url(#radGrad)" x="4" y="252.88211377997138" height="223.11788622002862" width="214.58054535036212" stroke="rgb(0,0,0)"/>
-          <rect fill="none" x="6" y="254.88211377997138" height="219.11788622002862" width="210.58054535036212" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-          <text fill="rgb(0,0,0)" text-anchor="" x="79.79027267518106" y="368.0410568899857" font-size="12" font-family="Verdana,monospace">fgraph.svg</text>
-        </g>
+    <g>
+      <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
         <g>
           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-            <title>../data_visualisation_2019/tree_map.ipynb (412.00 K)</title>
-            <rect fill="url(#radGrad)" x="218.58054535036212" y="252.88211377997138" height="83.56779003731148" width="138.52030522004088" stroke="rgb(0,0,0)"/>
-            <rect fill="none" x="220.58054535036212" y="254.88211377997138" height="79.56779003731148" width="134.52030522004088" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-            <text fill="rgb(0,0,0)" text-anchor="" x="244.34069796038256" y="298.2660087986271" font-size="12" font-family="Verdana,monospace">tree_map.ipynb</text>
+            <title>../data_visualisation_2019/fgraph.svg (1.66 M)</title>
+            <rect fill="url(#radGrad)" x="290.8071006360936" y="4" height="202.45995423340963" width="172.42994048942188" stroke="rgb(0,0,0)"/>
+            <rect fill="none" x="292.8071006360936" y="6" height="198.45995423340963" width="168.42994048942188" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <text fill="rgb(0,0,0)" text-anchor="" x="345.52207088080456" y="108.82997711670481" font-size="12" font-family="Verdana,monospace">fgraph.svg</text>
           </g>
           <g>
-            <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
-              <g>
-                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                  <title>../data_visualisation_2019/.git/objects (76.00 K)</title>
-                  <rect fill="url(#radGrad)" x="219.58054535036212" y="337.44990381728286" height="40.047730939192036" width="50.35872176223751" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="221.58054535036212" y="339.44990381728286" height="36.047730939192036" width="46.35872176223751" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="222.25990623148087" y="361.0737692868789" font-size="12" font-family="Verdana,monospace">objects</text>
-                </g>
-                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                  <title>../data_visualisation_2019/.git/hooks (48.00 K)</title>
-                  <rect fill="url(#radGrad)" x="219.58054535036212" y="377.4976347564749" height="25.293303751068663" width="50.35872176223751" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="221.58054535036212" y="379.4976347564749" height="21.293303751068663" width="46.35872176223751" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="228.25990623148087" y="393.7442866320092" font-size="12" font-family="Verdana,monospace">hooks</text>
-                </g>
-                <g>
-                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>../data_visualisation_2019/.git/logs (16.00 K)</title>
-                    <rect fill="url(#radGrad)" x="269.9392671125996" y="337.44990381728286" height="18.66886705436019" width="22.742648537784646" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="271.9392671125996" y="339.44990381728286" height="14.668867054360192" width="18.742648537784646" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="279.8105913814919" y="350.384337344463" font-size="12" font-family="Verdana,monospace"></text>
-                  </g>
-                  <g>
-                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>../data_visualisation_2019/.git/refs (12.00 K)</title>
-                      <rect fill="url(#radGrad)" x="269.9392671125996" y="356.11877087164305" height="14.001650290770158" width="22.742648537784646" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="271.9392671125996" y="358.11877087164305" height="10.001650290770158" width="18.742648537784646" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="279.8105913814919" y="366.71959601702815" font-size="12" font-family="Verdana,monospace"></text>
-                    </g>
-                    <g>
-                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>../data_visualisation_2019/.git/config (4.00 K)</title>
-                        <rect fill="url(#radGrad)" x="269.9392671125996" y="370.1204211624132" height="9.334433527180124" width="11.371324268892295" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="271.9392671125996" y="372.1204211624132" height="5.334433527180124" width="7.371324268892295" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="274.12492924704577" y="378.3876379260033" font-size="12" font-family="Verdana,monospace"></text>
-                      </g>
-                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>../data_visualisation_2019/.git/HEAD (4.00 K)</title>
-                        <rect fill="url(#radGrad)" x="281.3105913814919" y="370.1204211624132" height="9.334433527180124" width="11.371324268892295" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="283.3105913814919" y="372.1204211624132" height="5.334433527180124" width="7.371324268892295" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="285.49625351593806" y="378.3876379260033" font-size="12" font-family="Verdana,monospace"></text>
-                      </g>
-                      <g>
-                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>../data_visualisation_2019/.git/info (4.00 K)</title>
-                          <rect fill="url(#radGrad)" x="269.9392671125996" y="379.45485468959333" height="9.334433527180067" width="11.371324268892295" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="271.9392671125996" y="381.45485468959333" height="5.334433527180067" width="7.371324268892295" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="274.12492924704577" y="387.7220714531834" font-size="12" font-family="Verdana,monospace"></text>
-                        </g>
-                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>../data_visualisation_2019/.git/description (4.00 K)</title>
-                          <rect fill="url(#radGrad)" x="281.3105913814919" y="379.45485468959333" height="9.334433527180067" width="11.371324268892295" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="283.3105913814919" y="381.45485468959333" height="5.334433527180067" width="7.371324268892295" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="285.49625351593806" y="387.7220714531834" font-size="12" font-family="Verdana,monospace"></text>
-                        </g>
-                        <g>
-                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>../data_visualisation_2019/.git/index (4.00 K)</title>
-                            <rect fill="url(#radGrad)" x="269.9392671125996" y="388.7892882167734" height="14.001650290770158" width="7.580882845928215" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="271.9392671125996" y="390.7892882167734" height="10.001650290770158" width="3.5808828459282154" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="272.22970853556376" y="399.3901133621585" font-size="12" font-family="Verdana,monospace"></text>
-                          </g>
-                          <g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>../data_visualisation_2019/.git/packed-refs (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="277.52014995852784" y="388.7892882167734" height="14.001650290770158" width="7.580882845928215" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="279.52014995852784" y="390.7892882167734" height="10.001650290770158" width="3.5808828459282154" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="279.8105913814919" y="399.3901133621585" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g>
-                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                <title>../data_visualisation_2019/.git/COMMIT_EDITMSG (4.00 K)</title>
-                                <rect fill="url(#radGrad)" x="285.10103280445605" y="388.7892882167734" height="14.001650290770158" width="7.580882845928215" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="287.10103280445605" y="390.7892882167734" height="10.001650290770158" width="3.5808828459282154" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="287.3914742274202" y="399.3901133621585" font-size="12" font-family="Verdana,monospace"></text>
-                              </g>
-                              <g/>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-              <rect fill="none" x="218.58054535036212" y="336.44990381728286" height="67.3410346902607" width="75.10137030002215" stroke="rgb(0,0,0)" stroke-width="1"/>
-              <rect fill="none" x="220.58054535036212" y="338.44990381728286" height="63.3410346902607" width="71.10137030002215" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+              <title>../data_visualisation_2019/tree_map.ipynb (412.00 K)</title>
+              <rect fill="url(#radGrad)" x="463.2370411255155" y="4" height="116.66137606742201" width="72.35230033900484" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="465.2370411255155" y="6" height="112.66137606742201" width="68.35230033900484" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="467.9131912950179" y="65.93068803371101" font-size="12" font-family="Verdana,monospace">tree_ma...</text>
             </g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-              <title>../data_visualisation_2019/test33.svg (152.00 K)</title>
-              <rect fill="url(#radGrad)" x="293.68191565038427" y="336.44990381728286" height="67.3410346902607" width="63.41893492001873" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="295.68191565038427" y="338.44990381728286" height="63.3410346902607" width="59.41893492001873" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="296.89138311039363" y="373.72042116241323" font-size="12" font-family="Verdana,monospace">test33...</text>
+              <title>../data_visualisation_2019/index.html (344.00 K)</title>
+              <rect fill="url(#radGrad)" x="535.5893414645203" y="4" height="116.66137606742201" width="60.41065853547968" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="537.5893414645203" y="6" height="112.66137606742201" width="56.41065853547968" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="540.2946707322601" y="65.93068803371101" font-size="12" font-family="Verdana,monospace">index...</text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                <title>../data_visualisation_2019/test33.svg (152.00 K)</title>
+                <rect fill="url(#radGrad)" x="463.2370411255155" y="120.66137606742201" height="44.05872932848011" width="70.67956083965362" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="465.2370411255155" y="122.66137606742201" height="40.05872932848011" width="66.67956083965362" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="467.0768215453423" y="146.29074073166205" font-size="12" font-family="Verdana,monospace">test33.svg</text>
+              </g>
+              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>../data_visualisation_2019/downloads.svg (144.00 K)</title>
-                <rect fill="url(#radGrad)" x="218.58054535036212" y="403.79093850754356" height="72.20906149245644" width="56.030685103843894" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="220.58054535036212" y="405.79093850754356" height="68.20906149245644" width="52.030685103843894" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="221.09588790228406" y="443.49546925377183" font-size="12" font-family="Verdana,monospace">downl...</text>
+                <rect fill="url(#radGrad)" x="463.2370411255155" y="164.72010539590212" height="41.73984883750748" width="70.67956083965362" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="465.2370411255155" y="166.72010539590212" height="37.73984883750748" width="66.67956083965362" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="467.0768215453423" y="189.19002981465584" font-size="12" font-family="Verdana,monospace">downloa...</text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>../data_visualisation_2019/home.svg (80.00 K)</title>
-                  <rect fill="url(#radGrad)" x="274.611230454206" y="403.79093850754356" height="72.20906149245644" width="31.128158391024385" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="276.611230454206" y="405.79093850754356" height="68.20906149245644" width="27.128158391024385" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="276.6753096497182" y="443.49546925377183" font-size="12" font-family="Verdana,monospace">h...</text>
+                  <rect fill="url(#radGrad)" x="533.9166019651691" y="120.66137606742201" height="42.239300020178504" width="38.80212377176929" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="535.9166019651691" y="122.66137606742201" height="38.239300020178504" width="34.80212377176929" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="536.8176638510538" y="145.38102607751125" font-size="12" font-family="Verdana,monospace">ho...</text>
+                </g>
+                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                  <title>../data_visualisation_2019/parent.svg (48.00 K)</title>
+                  <rect fill="url(#radGrad)" x="572.7187257369384" y="120.66137606742201" height="42.239300020178504" width="23.28127426306162" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="574.7187257369384" y="122.66137606742201" height="38.239300020178504" width="19.28127426306162" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="582.8593628684691" y="145.38102607751125" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                     <title>../data_visualisation_2019/tree_map_1.ipynb (24.00 K)</title>
-                    <rect fill="url(#radGrad)" x="305.7393888452304" y="403.79093850754356" height="26.257840348450657" width="25.6807308625863" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="307.7393888452304" y="405.79093850754356" height="22.257840348450657" width="21.6807308625863" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="317.07975427652354" y="420.51985868176894" font-size="12" font-family="Verdana,monospace"></text>
+                    <rect fill="url(#radGrad)" x="533.9166019651691" y="162.90067608760052" height="21.77963907290456" width="22.575781103574855" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="535.9166019651691" y="164.90067608760052" height="17.77963907290456" width="18.575781103574855" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="543.7044925169565" y="177.3904956240528" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>../data_visualisation_2019/parent.svg (24.00 K)</title>
-                    <rect fill="url(#radGrad)" x="331.4201197078167" y="403.79093850754356" height="26.257840348450657" width="25.6807308625863" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="333.4201197078167" y="405.79093850754356" height="22.257840348450657" width="21.6807308625863" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="342.76048513910985" y="420.51985868176894" font-size="12" font-family="Verdana,monospace"></text>
+                    <title>../data_visualisation_2019/.ipynb_checkpoints (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="533.9166019651691" y="184.68031516050507" height="21.77963907290456" width="22.575781103574855" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="535.9166019651691" y="186.68031516050507" height="17.77963907290456" width="18.575781103574855" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="543.7044925169565" y="199.17013469695735" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                       <title>../data_visualisation_2019/README.md (20.00 K)</title>
-                      <rect fill="url(#radGrad)" x="305.7393888452304" y="430.0487788559942" height="28.719513215003644" width="19.566270905926615" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="307.7393888452304" y="432.0487788559942" height="24.719513215003644" width="15.566270905926615" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="314.02252429819373" y="448.00853546349606" font-size="12" font-family="Verdana,monospace"></text>
+                      <rect fill="url(#radGrad)" x="556.492383068744" y="162.90067608760052" height="16.594010722213" width="24.692260582035033" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="558.492383068744" y="164.90067608760052" height="12.594010722213" width="20.692260582035033" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="567.3385133597615" y="174.797681448707" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                       <title>../data_visualisation_2019/test32.svg (12.00 K)</title>
-                      <rect fill="url(#radGrad)" x="305.7393888452304" y="458.76829207099786" height="17.23170792900214" width="19.566270905926615" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="307.7393888452304" y="460.76829207099786" height="13.231707929002141" width="15.566270905926615" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="314.02252429819373" y="470.98414603549895" font-size="12" font-family="Verdana,monospace"></text>
+                      <rect fill="url(#radGrad)" x="581.184643650779" y="162.90067608760052" height="16.594010722213" width="14.81535634922102" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="583.184643650779" y="164.90067608760052" height="12.594010722213" width="10.81535634922102" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="587.0923218253895" y="174.797681448707" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                         <title>../data_visualisation_2019/dest (12.00 K)</title>
-                        <rect fill="url(#radGrad)" x="325.305659751157" y="430.0487788559942" height="21.20825551432597" width="15.897595409623023" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="327.305659751157" y="432.0487788559942" height="17.20825551432597" width="11.897595409623023" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="331.7544574559685" y="444.2529066131572" font-size="12" font-family="Verdana,monospace"></text>
+                        <rect fill="url(#radGrad)" x="556.492383068744" y="179.49468680981352" height="13.482633711798059" width="18.234284737502776" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="558.492383068744" y="181.49468680981352" height="9.482633711798059" width="14.234284737502776" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="564.1095254374953" y="189.83600366571252" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                         <title>../data_visualisation_2019/test34.svg (12.00 K)</title>
-                        <rect fill="url(#radGrad)" x="341.20325516078003" y="430.0487788559942" height="21.20825551432597" width="15.897595409623023" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="343.20325516078003" y="432.0487788559942" height="17.20825551432597" width="11.897595409623023" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="347.65205286559154" y="444.2529066131572" font-size="12" font-family="Verdana,monospace"></text>
+                        <rect fill="url(#radGrad)" x="556.492383068744" y="192.97732052161157" height="13.482633711798059" width="18.234284737502776" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="558.492383068744" y="194.97732052161157" height="9.482633711798059" width="14.234284737502776" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="564.1095254374953" y="203.3186373775106" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                           <title>../data_visualisation_2019/test3.svg (8.00 K)</title>
-                          <rect fill="url(#radGrad)" x="325.305659751157" y="451.2570343703202" height="16.495310419786563" width="13.626509875850502" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="327.305659751157" y="453.2570343703202" height="12.495310419786563" width="9.626509875850502" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="330.61891468908226" y="463.1046895802135" font-size="12" font-family="Verdana,monospace"></text>
+                          <rect fill="url(#radGrad)" x="574.7266678062467" y="179.49468680981352" height="11.556543181541201" width="14.182221462502184" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="576.7266678062467" y="181.49468680981352" height="7.556543181541201" width="10.182221462502184" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="580.3177785374978" y="188.8729584005841" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                           <title>../data_visualisation_2019/test2.svg (4.00 K)</title>
-                          <rect fill="url(#radGrad)" x="325.305659751157" y="467.75234479010675" height="8.247655209893253" width="13.626509875850502" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="327.305659751157" y="469.75234479010675" height="4.247655209893253" width="9.626509875850502" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="330.61891468908226" y="475.47617239505337" font-size="12" font-family="Verdana,monospace"></text>
+                          <rect fill="url(#radGrad)" x="588.9088892687489" y="179.49468680981352" height="11.556543181541201" width="7.091110731251092" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="590.9088892687489" y="181.49468680981352" height="7.556543181541201" width="3.091110731251092" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="590.9544446343745" y="188.8729584005841" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                             <title>../data_visualisation_2019/script.js (4.00 K)</title>
-                            <rect fill="url(#radGrad)" x="338.9321696270075" y="451.2570343703202" height="12.371482059744551" width="9.084340471697715" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="340.9321696270075" y="453.2570343703202" height="8.371482059744551" width="5.084340471697715" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="341.97433986285637" y="461.04277540019245" font-size="12" font-family="Verdana,monospace"></text>
+                            <rect fill="url(#radGrad)" x="574.7266678062467" y="191.05122999135472" height="7.704362121027458" width="10.636666096876638" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="576.7266678062467" y="193.05122999135472" height="3.704362121027458" width="6.636666096876638" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="578.545000854685" y="198.50341105186843" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                             <title>../data_visualisation_2019/.gitignore (4.00 K)</title>
-                            <rect fill="url(#radGrad)" x="348.0165100987052" y="451.2570343703202" height="12.371482059744551" width="9.084340471697715" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="350.0165100987052" y="453.2570343703202" height="8.371482059744551" width="5.084340471697715" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="351.0586803345541" y="461.04277540019245" font-size="12" font-family="Verdana,monospace"></text>
+                            <rect fill="url(#radGrad)" x="574.7266678062467" y="198.75559211238217" height="7.704362121027458" width="10.636666096876638" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="576.7266678062467" y="200.75559211238217" height="3.704362121027458" width="6.636666096876638" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="578.545000854685" y="206.2077731728959" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g>
                             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                               <title>../data_visualisation_2019/a.svg (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="338.9321696270075" y="463.62851643006474" height="12.371483569935265" width="9.084339362769583" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="340.9321696270075" y="465.62851643006474" height="8.371483569935265" width="5.084339362769583" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="341.9743393083923" y="473.4142582150324" font-size="12" font-family="Verdana,monospace"></text>
+                              <rect fill="url(#radGrad)" x="585.3633339031234" y="191.05122999135472" height="7.704362121027458" width="10.636666096876638" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="587.3633339031234" y="193.05122999135472" height="3.704362121027458" width="6.636666096876638" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="589.1816669515617" y="198.50341105186843" font-size="12" font-family="Verdana,monospace"></text>
                             </g>
                             <g>
                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                 <title>../data_visualisation_2019/test.svg (4.00 K)</title>
-                                <rect fill="url(#radGrad)" x="348.0165089897771" y="463.62851643006474" height="12.371480549554292" width="9.084341580625903" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="350.0165089897771" y="465.62851643006474" height="8.371480549554292" width="5.084341580625903" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="351.0586797800901" y="473.41425670484193" font-size="12" font-family="Verdana,monospace"></text>
+                                <rect fill="url(#radGrad)" x="585.3633339031234" y="198.75559211238217" height="7.704362121027458" width="10.636666096876638" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="587.3633339031234" y="200.75559211238217" height="3.704362121027458" width="6.636666096876638" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="589.1816669515617" y="206.2077731728959" font-size="12" font-family="Verdana,monospace"></text>
                               </g>
                               <g/>
                             </g>
@@ -427,72 +723,76 @@ function g_to_text(e) {
             </g>
           </g>
         </g>
-      </g>
-      <rect fill="none" x="3" y="251.88211377997138" height="225.11788622002862" width="355.100850570403" stroke="rgb(0,0,0)" stroke-width="1"/>
-      <rect fill="none" x="5" y="253.88211377997138" height="221.11788622002862" width="351.100850570403" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-    </g>
-    <g>
-      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-        <title>../miptmap.png (1.92 M)</title>
-        <rect fill="url(#radGrad)" x="358.100850570403" y="3" height="234.8519637462236" width="238.899149429597" stroke="rgb(0,0,0)"/>
-        <rect fill="none" x="360.100850570403" y="5" height="230.8519637462236" width="234.899149429597" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-        <text fill="rgb(0,0,0)" text-anchor="" x="443.0504252852015" y="124.02598187311179" font-size="12" font-family="Verdana,monospace">miptmap.png</text>
+        <rect fill="none" x="289.8071006360936" y="3" height="204.45995423340963" width="307.1928993639064" stroke="rgb(0,0,0)" stroke-width="1"/>
+        <rect fill="none" x="291.8071006360936" y="5" height="200.45995423340963" width="303.1928993639064" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
       </g>
       <g>
-        <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
-          <g>
-            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-              <title>../.ipynb_checkpoints/Untitled-checkpoint.ipynb (704.00 K)</title>
-              <rect fill="url(#radGrad)" x="359.100850570403" y="238.8519637462236" height="163.16012084592143" width="119.52095462314759" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="361.100850570403" y="240.8519637462236" height="159.16012084592143" width="115.52095462314759" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="366.36132788197676" y="324.0320241691843" font-size="12" font-family="Verdana,monospace">Untitled-check...</text>
-            </g>
-            <g/>
-          </g>
-          <rect fill="none" x="358.100850570403" y="237.8519637462236" height="165.16012084592143" width="121.52095462314759" stroke="rgb(0,0,0)" stroke-width="1"/>
-          <rect fill="none" x="360.100850570403" y="239.8519637462236" height="161.16012084592143" width="117.52095462314759" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-        </g>
         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-          <title>../Untitled.ipynb (680.00 K)</title>
-          <rect fill="url(#radGrad)" x="479.6218051935506" y="237.8519637462236" height="165.16012084592143" width="117.37819480644941" stroke="rgb(0,0,0)"/>
-          <rect fill="none" x="481.6218051935506" y="239.8519637462236" height="161.16012084592143" width="113.37819480644941" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-          <text fill="rgb(0,0,0)" text-anchor="" x="494.81090259677535" y="324.0320241691843" font-size="12" font-family="Verdana,monospace">Untitled.ipynb</text>
+          <title>../miptmap.png (1.92 M)</title>
+          <rect fill="url(#radGrad)" x="289.8071006360936" y="207.45995423340963" height="269.54004576659037" width="152.0512137696599" stroke="rgb(0,0,0)"/>
+          <rect fill="none" x="291.8071006360936" y="209.45995423340963" height="265.54004576659037" width="148.0512137696599" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          <text fill="rgb(0,0,0)" text-anchor="" x="331.3327075209236" y="345.82997711670487" font-size="12" font-family="Verdana,monospace">miptmap.png</text>
         </g>
         <g>
-          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-            <title>../all.png (516.00 K)</title>
-            <rect fill="url(#radGrad)" x="358.100850570403" y="403.012084592145" height="73.98791540785498" width="198.8257437188259" stroke="rgb(0,0,0)"/>
-            <rect fill="none" x="360.100850570403" y="405.012084592145" height="69.98791540785498" width="194.8257437188259" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-            <text fill="rgb(0,0,0)" text-anchor="" x="435.01372242981597" y="443.60604229607253" font-size="12" font-family="Verdana,monospace">all.png</text>
+          <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
+            <g>
+              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                <title>../.ipynb_checkpoints/Untitled-checkpoint.ipynb (704.00 K)</title>
+                <rect fill="url(#radGrad)" x="442.8583144057535" y="208.45995423340963" height="92.5000957269321" width="153.1416855942465" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="444.8583144057535" y="210.45995423340963" height="88.5000957269321" width="149.1416855942465" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="454.9291572028767" y="258.3100020968757" font-size="12" font-family="Verdana,monospace">Untitled-checkpoin...</text>
+              </g>
+              <g/>
+            </g>
+            <rect fill="none" x="441.8583144057535" y="207.45995423340963" height="94.5000957269321" width="155.1416855942465" stroke="rgb(0,0,0)" stroke-width="1"/>
+            <rect fill="none" x="443.8583144057535" y="209.45995423340963" height="90.5000957269321" width="151.1416855942465" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
           </g>
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-              <title>../iconsbelow.png (48.00 K)</title>
-              <rect fill="url(#radGrad)" x="556.9265942892289" y="403.012084592145" height="34.1482686497792" width="40.07340571077111" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="558.9265942892289" y="405.012084592145" height="30.148268649779197" width="36.07340571077111" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="560.4632971446144" y="423.68621891703464" font-size="12" font-family="Verdana,monospace">ic...</text>
+              <title>../Untitled.ipynb (680.00 K)</title>
+              <rect fill="url(#radGrad)" x="441.8583144057535" y="301.96004996034173" height="91.27850155442303" width="155.1416855942465" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="443.8583144057535" y="303.96004996034173" height="87.27850155442303" width="151.1416855942465" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="475.9291572028767" y="351.19930073755324" font-size="12" font-family="Verdana,monospace">Untitled.ipynb</text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                <title>../dormpie.png (24.00 K)</title>
-                <rect fill="url(#radGrad)" x="556.9265942892289" y="437.1603532419242" height="19.919823379037894" width="34.34863346637519" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="558.9265942892289" y="439.1603532419242" height="15.919823379037894" width="30.34863346637519" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="560.6009110224165" y="450.7202649314432" font-size="12" font-family="Verdana,monospace">d...</text>
-              </g>
-              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                <title>../doempie.png (24.00 K)</title>
-                <rect fill="url(#radGrad)" x="556.9265942892289" y="457.0801766209621" height="19.919823379037894" width="34.34863346637519" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="558.9265942892289" y="459.0801766209621" height="15.919823379037894" width="30.34863346637519" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="560.6009110224165" y="470.6400883104811" font-size="12" font-family="Verdana,monospace">d...</text>
+                <title>../all.png (516.00 K)</title>
+                <rect fill="url(#radGrad)" x="441.8583144057535" y="393.23855151476477" height="83.76144848523523" width="128.29024001062692" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="443.8583144057535" y="395.23855151476477" height="79.76144848523523" width="124.29024001062692" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="483.50343441106696" y="438.71927575738243" font-size="12" font-family="Verdana,monospace">all.png</text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                  <title>../.DS_Store (8.00 K)</title>
-                  <rect fill="url(#radGrad)" x="591.2752277556041" y="437.1603532419242" height="39.83964675807579" width="5.724772244395922" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="593.2752277556041" y="439.1603532419242" height="35.83964675807579" width="1.724772244395922" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="593.2752277556041" y="460.68017662096213" font-size="12" font-family="Verdana,monospace"></text>
+                  <title>../iconsbelow.png (48.00 K)</title>
+                  <rect fill="url(#radGrad)" x="570.1485544163804" y="393.23855151476477" height="37.227310437882295" width="26.85144558361958" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="572.1485544163804" y="395.23855151476477" height="33.227310437882295" width="22.85144558361958" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="582.0742772081902" y="415.4522067337059" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
-                <g/>
+                <g>
+                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                    <title>../dormpie.png (24.00 K)</title>
+                    <rect fill="url(#radGrad)" x="570.1485544163804" y="430.46586195264706" height="18.613655218941176" width="26.85144558361958" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="572.1485544163804" y="432.46586195264706" height="14.613655218941176" width="22.85144558361958" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="582.0742772081902" y="443.37268956211767" font-size="12" font-family="Verdana,monospace"></text>
+                  </g>
+                  <g>
+                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                      <title>../doempie.png (24.00 K)</title>
+                      <rect fill="url(#radGrad)" x="570.1485544163804" y="449.07951717158824" height="18.613655218941176" width="26.85144558361958" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="572.1485544163804" y="451.07951717158824" height="14.613655218941176" width="22.85144558361958" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="582.0742772081902" y="461.98634478105885" font-size="12" font-family="Verdana,monospace"></text>
+                    </g>
+                    <g>
+                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                        <title>../.DS_Store (12.00 K)</title>
+                        <rect fill="url(#radGrad)" x="570.1485544163804" y="467.6931723905294" height="9.306827609470588" width="26.85144558361958" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="572.1485544163804" y="469.6931723905294" height="5.306827609470588" width="22.85144558361958" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="582.0742772081902" y="475.94658619526473" font-size="12" font-family="Verdana,monospace"></text>
+                      </g>
+                      <g/>
+                    </g>
+                  </g>
+                </g>
               </g>
             </g>
           </g>
