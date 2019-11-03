@@ -51,9 +51,49 @@ function g_to_text(e) {
 }
 ]]></script>
   <defs>
-    <radialGradient id="radGrad">
-      <stop offset="0%" stop-color="rgb(255, 230, 230)"/>
-      <stop offset="100%" stop-color="rgb(255, 255, 255)"/>
+    <radialGradient id="radGrad0">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(210, 230, 241)"/>
+    </radialGradient>
+    <radialGradient id="radGrad1">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(143, 187, 217)"/>
+    </radialGradient>
+    <radialGradient id="radGrad2">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(216, 239, 196)"/>
+    </radialGradient>
+    <radialGradient id="radGrad3">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(153, 207, 149)"/>
+    </radialGradient>
+    <radialGradient id="radGrad4">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(253, 204, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad5">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(254, 223, 183)"/>
+    </radialGradient>
+    <radialGradient id="radGrad6">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(255, 191, 127)"/>
+    </radialGradient>
+    <radialGradient id="radGrad7">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(228, 216, 234)"/>
+    </radialGradient>
+    <radialGradient id="radGrad8">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(180, 158, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad9">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(255, 255, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad10">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(216, 172, 147)"/>
     </radialGradient>
   </defs>
   <text fill="rgb(0,0,0)" text-anchor="" x="0" y="495" font-size="12" font-family="Verdana,monospace" id="details"> </text>
@@ -64,140 +104,86 @@ function g_to_text(e) {
         <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-              <title>~/VirtualBox VMs/Ubuntu/Ubuntu.vdi (21.21 G)</title>
-              <rect fill="url(#radGrad)" x="5" y="5" height="469.9832642002762" width="408.8801408774042" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="7" y="7" height="465.9832642002762" width="404.8801408774042" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="177.9400704387021" y="243.5916321001381" font-size="12" font-family="Verdana,monospace">Ubuntu.vdi</text>
+              <title>~/VirtualBox VMs/Ubuntu/Ubuntu.vdi (25.20 G)</title>
+              <rect fill="url(#radGrad0)" x="5" y="5" height="469.97794755325543" width="429.1570882815027" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="7" y="7" height="465.97794755325543" width="425.1570882815027" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="188.07854414075135" y="243.5889737766277" font-size="12" font-family="Verdana,monospace">Ubuntu.vdi</text>
             </g>
-            <g>
-              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                <title>~/VirtualBox VMs/Ubuntu/Logs (768.00 K)</title>
-                <rect fill="url(#radGrad)" x="5" y="474.9832642002762" height="0.016566039183317116" width="400.5356477075234" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="7" y="476.9832642002762" height="-3.983433960816683" width="396.5356477075234" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="203.7678238537617" y="478.5915472198679" font-size="12" font-family="Verdana,monospace"></text>
-              </g>
-              <g>
-                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                  <title>~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev (8.00 K)</title>
-                  <rect fill="url(#radGrad)" x="405.5356477075234" y="474.9832642002762" height="0.016566039183317116" width="4.172246330286669" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="407.5356477075234" y="476.9832642002762" height="-3.983433960816683" width="0.17224633028666858" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="407.5356477075234" y="478.5915472198679" font-size="12" font-family="Verdana,monospace"></text>
-                </g>
-                <g>
-                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>~/VirtualBox VMs/Ubuntu/Ubuntu.vbox (8.00 K)</title>
-                    <rect fill="url(#radGrad)" x="409.7078940378101" y="474.9832642002762" height="0.016566039183317116" width="4.172246330286669" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="411.7078940378101" y="476.9832642002762" height="-3.983433960816683" width="0.17224633028666858" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="411.7078940378101" y="478.5915472198679" font-size="12" font-family="Verdana,monospace"></text>
-                  </g>
-                  <g/>
-                </g>
-              </g>
-            </g>
+            <g/>
           </g>
-          <rect fill="none" x="4" y="4" height="471.9998302394595" width="410.8801408774042" stroke="rgb(0,0,0)" stroke-width="1"/>
-          <rect fill="none" x="6" y="6" height="467.9998302394595" width="406.8801408774042" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          <rect fill="none" x="4" y="4" height="471.99985712465184" width="431.1570882815027" stroke="rgb(0,0,0)" stroke-width="1"/>
+          <rect fill="none" x="6" y="6" height="467.99985712465184" width="427.1570882815027" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
         </g>
         <g/>
       </g>
-      <rect fill="none" x="3" y="3" height="474.00000000000006" width="412.8801408774042" stroke="rgb(0,0,0)" stroke-width="1"/>
-      <rect fill="none" x="5" y="5" height="470.00000000000006" width="408.8801408774042" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+      <rect fill="none" x="3" y="3" height="474.0" width="433.1570882815027" stroke="rgb(0,0,0)" stroke-width="1"/>
+      <rect fill="none" x="5" y="5" height="470.0" width="429.1570882815027" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
     </g>
     <g>
       <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
         <g>
           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
             <title>~/.Trash/Ubuntu.zip (7.72 G)</title>
-            <rect fill="url(#radGrad)" x="416.8801408774042" y="4" height="391.2688314662949" width="179.1198591225958" stroke="rgb(0,0,0)"/>
-            <rect fill="none" x="418.8801408774042" y="6" height="387.2688314662949" width="175.1198591225958" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-            <text fill="rgb(0,0,0)" text-anchor="" x="474.9400704387021" y="203.23441573314744" font-size="12" font-family="Verdana,monospace">Ubuntu.zip</text>
+            <rect fill="url(#radGrad1)" x="437.1570882815027" y="4" height="389.01726111920937" width="158.8429117184973" stroke="rgb(0,0,0)"/>
+            <rect fill="none" x="439.1570882815027" y="6" height="385.01726111920937" width="154.8429117184973" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <text fill="rgb(0,0,0)" text-anchor="" x="485.0785441407513" y="202.10863055960468" font-size="12" font-family="Verdana,monospace">Ubuntu.zip</text>
           </g>
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
               <title>~/.Trash/virtualbox-6-0-8-build-130520.dmg (144.56 M)</title>
-              <rect fill="url(#radGrad)" x="416.8801408774042" y="395.2688314662949" height="8.564625396028077" width="149.6459748148293" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="418.8801408774042" y="397.2688314662949" height="4.564625396028077" width="145.6459748148293" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="490.20312828481883" y="403.15114416430896" font-size="12" font-family="Verdana,monospace"></text>
+              <rect fill="url(#radGrad1)" x="437.1570882815027" y="393.01726111920937" height="8.51533995587863" width="132.70556644571303" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="439.1570882815027" y="395.01726111920937" height="4.5153399558786305" width="128.70556644571303" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="502.00987150435924" y="400.8749310971487" font-size="12" font-family="Verdana,monospace"></text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>~/.Trash/Karabiner-Elements-12.7.0.dmg (9.06 M)</title>
-                <rect fill="url(#radGrad)" x="566.5261156922335" y="395.2688314662949" height="8.564625396028077" width="9.38117870650683" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="568.5261156922335" y="397.2688314662949" height="4.564625396028077" width="5.38117870650683" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="569.7167050454868" y="403.15114416430896" font-size="12" font-family="Verdana,monospace"></text>
+                <rect fill="url(#radGrad1)" x="569.8626547272157" y="393.01726111920937" height="8.51533995587863" width="8.319198934123847" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="571.8626547272157" y="395.01726111920937" height="4.5153399558786305" width="4.319198934123847" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="572.5222541942776" y="400.8749310971487" font-size="12" font-family="Verdana,monospace"></text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>~/.Trash/osxfuse-3.10.3.dmg (6.88 M)</title>
-                  <rect fill="url(#radGrad)" x="575.9072943987403" y="395.2688314662949" height="8.564625396028077" width="7.124843483131485" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="577.9072943987403" y="397.2688314662949" height="4.564625396028077" width="3.1248434831314853" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="577.969716140306" y="403.15114416430896" font-size="12" font-family="Verdana,monospace"></text>
+                  <rect fill="url(#radGrad1)" x="578.1818536613396" y="393.01726111920937" height="8.51533995587863" width="6.318288156002609" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="580.1818536613396" y="395.01726111920937" height="4.5153399558786305" width="2.318288156002609" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="580.1818536613396" y="400.8749310971487" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                     <title>~/.Trash/sshfs-2.5.0.pkg (3.57 M)</title>
-                    <rect fill="url(#radGrad)" x="583.0321378818718" y="395.2688314662949" height="5.089770879044011" width="6.219074504572177" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="585.0321378818718" y="397.2688314662949" height="1.0897708790440106" width="2.219074504572177" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="585.0321378818718" y="401.41371690581695" font-size="12" font-family="Verdana,monospace"></text>
+                    <rect fill="url(#radGrad1)" x="584.5001418173422" y="393.01726111920937" height="5.0604816122711895" width="5.515055155466598" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="586.5001418173422" y="395.01726111920937" height="1.0604816122711895" width="1.515055155466598" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="586.5001418173422" y="399.14750192534495" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                     <title>~/.Trash/IMG_5280.JPG (2.44 M)</title>
-                    <rect fill="url(#radGrad)" x="583.0321378818718" y="400.3586023453389" height="3.4748545169840668" width="6.219074504572177" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="585.0321378818718" y="402.3586023453389" height="-0.5251454830159332" width="2.219074504572177" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="585.0321378818718" y="405.696029603831" font-size="12" font-family="Verdana,monospace"></text>
+                    <rect fill="url(#radGrad1)" x="584.5001418173422" y="398.07774273148055" height="3.454858343607441" width="5.515055155466598" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="586.5001418173422" y="400.07774273148055" height="0" width="1.515055155466598" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="586.5001418173422" y="403.4051719032843" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                       <title>~/.Trash/IMG_5249.JPG (2.36 M)</title>
-                      <rect fill="url(#radGrad)" x="589.251212386444" y="395.2688314662949" height="5.968040343992584" width="3.504959345303405" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="591.251212386444" y="397.2688314662949" height="1.968040343992584" width="-0.4950406546965951" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="591.251212386444" y="401.8528516382912" font-size="12" font-family="Verdana,monospace"></text>
-                    </g>
-                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>~/.Trash/IMG_5303.JPG (2.18 M)</title>
-                      <rect fill="url(#radGrad)" x="592.7561717317474" y="395.2688314662949" height="5.968040343992584" width="3.243828268252628" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="594.7561717317474" y="397.2688314662949" height="1.968040343992584" width="-0.7561717317473722" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="594.7561717317474" y="401.8528516382912" font-size="12" font-family="Verdana,monospace"></text>
+                      <rect fill="url(#radGrad1)" x="590.0151969728088" y="393.01726111920937" height="3.081644896703608" width="5.984803027191219" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="592.0151969728088" y="395.01726111920937" height="0" width="1.9848030271912194" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="592.0151969728088" y="398.1580835675612" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>~/.Trash/IMG_5304.JPG (1.93 M)</title>
-                        <rect fill="url(#radGrad)" x="589.251212386444" y="401.2368718102875" height="2.5965850520354934" width="6.588737311241289" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="591.251212386444" y="403.2368718102875" height="-1.4034149479645066" width="2.588737311241289" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="591.251212386444" y="406.13516433630525" font-size="12" font-family="Verdana,monospace"></text>
+                        <title>~/.Trash/IMG_5303.JPG (2.18 M)</title>
+                        <rect fill="url(#radGrad1)" x="590.0151969728088" y="396.098906015913" height="5.433695059175022" width="3.141319146885394" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="592.0151969728088" y="398.098906015913" height="1.4336950591750224" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="592.0151969728088" y="402.4157535455005" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>~/.Trash/geany (16.00 K)</title>
-                          <rect fill="url(#radGrad)" x="595.8399496976853" y="401.2368718102875" height="0.8655283330692782" width="0.16005030231474393" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="597.8399496976853" y="403.2368718102875" height="-3.1344716669307218" width="-3.839949697685256" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="597.8399496976853" y="405.26963597682214" font-size="12" font-family="Verdana,monospace"></text>
+                          <title>~/.Trash/IMG_5304.JPG (1.93 M)</title>
+                          <rect fill="url(#radGrad1)" x="593.1565161196942" y="396.098906015913" height="5.304832723196341" width="2.8434838803058256" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="595.1565161196942" y="398.098906015913" height="1.3048327231963412" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="595.1565161196942" y="402.35132237751117" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
-                        <g>
-                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>~/.Trash/.DS_Store (12.00 K)</title>
-                            <rect fill="url(#radGrad)" x="595.8399496976853" y="402.10240014335676" height="0.6491462498019587" width="0.16005030231474393" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="597.8399496976853" y="404.10240014335676" height="-3.3508537501980413" width="-3.839949697685256" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="597.8399496976853" y="406.02697326825773" font-size="12" font-family="Verdana,monospace"></text>
-                          </g>
-                          <g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>~/.Trash/geany.zip (12.00 K)</title>
-                              <rect fill="url(#radGrad)" x="595.8399496976853" y="402.7515463931587" height="0.6491462498019587" width="0.16005030231474393" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="597.8399496976853" y="404.7515463931587" height="-3.3508537501980413" width="-3.839949697685256" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="597.8399496976853" y="406.67611951805975" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g>
-                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                <title>~/.Trash/all (8.00 K)</title>
-                                <rect fill="url(#radGrad)" x="595.8399496976853" y="403.4006926429607" height="0.4327641665346391" width="0.16005030231474393" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="597.8399496976853" y="405.4006926429607" height="-3.567235833465361" width="-3.839949697685256" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="597.8399496976853" y="407.217074726228" font-size="12" font-family="Verdana,monospace"></text>
-                              </g>
-                              <g/>
-                            </g>
-                          </g>
-                        </g>
+                        <g/>
                       </g>
                     </g>
                   </g>
@@ -206,342 +192,320 @@ function g_to_text(e) {
             </g>
           </g>
         </g>
-        <rect fill="none" x="415.8801408774042" y="3" height="401.833456862323" width="181.1198591225958" stroke="rgb(0,0,0)" stroke-width="1"/>
-        <rect fill="none" x="417.8801408774042" y="5" height="397.833456862323" width="177.1198591225958" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+        <rect fill="none" x="436.1570882815027" y="3" height="399.532601075088" width="160.8429117184973" stroke="rgb(0,0,0)" stroke-width="1"/>
+        <rect fill="none" x="438.1570882815027" y="5" height="395.532601075088" width="156.8429117184973" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
       </g>
       <g>
         <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
               <title>~/Downloads/jm_tra-3sUmvkixf7Y.zip (240.91 M)</title>
-              <rect fill="url(#radGrad)" x="416.8801408774042" y="405.833456862323" height="36.28011778148664" width="57.51161125914774" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="418.8801408774042" y="407.833456862323" height="32.28011778148664" width="53.51161125914774" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="420.13594650697803" y="427.5735157530663" font-size="12" font-family="Verdana,monospace">jm_tr...</text>
+              <rect fill="url(#radGrad2)" x="437.1570882815027" y="403.532601075088" height="37.46979188008527" width="49.117632661751486" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="439.1570882815027" y="405.532601075088" height="33.46979188008527" width="45.117632661751486" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="439.21590461237844" y="425.86749701513065" font-size="12" font-family="Verdana,monospace">jm_t...</text>
             </g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
               <title>~/Downloads/2019.10 &#1044;&#1072;&#1080;&#774;&#1074;&#1080;&#1085;&#1075; &#1074; &#1069;&#1080;&#774;&#1083;&#1072;&#1090;&#1077; (225.01 M)</title>
-              <rect fill="url(#radGrad)" x="416.8801408774042" y="442.1135746438096" height="33.88642535619039" width="57.51161125914774" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="418.8801408774042" y="444.1135746438096" height="29.886425356190387" width="53.51161125914774" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="420.13594650697803" y="462.65678732190486" font-size="12" font-family="Verdana,monospace">2019....</text>
+              <rect fill="url(#radGrad2)" x="437.1570882815027" y="441.00239295517326" height="34.99760704482674" width="49.117632661751486" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="439.1570882815027" y="443.00239295517326" height="30.997607044826736" width="45.117632661751486" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="439.21590461237844" y="462.10119647758665" font-size="12" font-family="Verdana,monospace">2019...</text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>~/Downloads/001.jpg.zip (128.12 M)</title>
-                <rect fill="url(#radGrad)" x="474.39175213655193" y="405.833456862323" height="35.083271568838484" width="31.630783471809593" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="476.39175213655193" y="407.833456862323" height="31.083271568838484" width="27.630783471809593" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="476.70714387245675" y="426.97509264674227" font-size="12" font-family="Verdana,monospace">0...</text>
+                <rect fill="url(#radGrad2)" x="486.2747209432542" y="403.532601075088" height="36.233699462456" width="27.014183211996567" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="488.2747209432542" y="405.532601075088" height="32.233699462456" width="23.014183211996567" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="498.28181254925244" y="425.249450806316" font-size="12" font-family="Verdana,monospace"></text>
               </g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                 <title>~/Downloads/001.jpg-1.zip (128.12 M)</title>
-                <rect fill="url(#radGrad)" x="474.39175213655193" y="440.91672843116146" height="35.08327156883854" width="31.630783471809593" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="476.39175213655193" y="442.91672843116146" height="31.08327156883854" width="27.630783471809593" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="476.70714387245675" y="462.05836421558075" font-size="12" font-family="Verdana,monospace">0...</text>
+                <rect fill="url(#radGrad2)" x="486.2747209432542" y="439.766300537544" height="36.233699462456" width="27.014183211996567" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="488.2747209432542" y="441.766300537544" height="32.233699462456" width="23.014183211996567" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="498.28181254925244" y="461.483150268772" font-size="12" font-family="Verdana,monospace"></text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>~/Downloads/001.jpg-2.zip (128.12 M)</title>
-                  <rect fill="url(#radGrad)" x="506.0225356083615" y="405.833456862323" height="35.20240164758491" width="31.523740271645806" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="508.0225356083615" y="407.833456862323" height="31.202401647584907" width="27.523740271645806" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="508.28440574418437" y="427.03465768611545" font-size="12" font-family="Verdana,monospace">0...</text>
+                  <rect fill="url(#radGrad2)" x="513.2889041552507" y="403.532601075088" height="36.356735977501785" width="26.922763262712124" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="515.2889041552507" y="405.532601075088" height="32.356735977501785" width="22.922763262712124" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="525.2502857866068" y="425.3109690638389" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>~/Downloads/001.jpg (127.26 M)</title>
-                  <rect fill="url(#radGrad)" x="506.0225356083615" y="441.0358585099079" height="34.96414149009212" width="31.523740271645806" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="508.0225356083615" y="443.0358585099079" height="30.964141490092118" width="27.523740271645806" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="508.28440574418437" y="462.117929254954" font-size="12" font-family="Verdana,monospace">0...</text>
+                  <rect fill="url(#radGrad2)" x="513.2889041552507" y="439.8893370525898" height="36.11066294741022" width="26.922763262712124" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="515.2889041552507" y="441.8893370525898" height="32.11066294741022" width="22.922763262712124" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="525.2502857866068" y="461.5446685262949" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                     <title>~/Downloads/001.jpg-1 (127.26 M)</title>
-                    <rect fill="url(#radGrad)" x="537.5462758800073" y="405.833456862323" height="40.3026489356875" width="27.34809111216407" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="539.5462758800073" y="407.833456862323" height="36.3026489356875" width="23.34809111216407" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="549.7203214360893" y="429.5847813301667" font-size="12" font-family="Verdana,monospace"></text>
+                    <rect fill="url(#radGrad2)" x="540.2116674179629" y="403.532601075088" height="41.4776025750981" width="23.43912785297755" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="542.2116674179629" y="405.532601075088" height="37.4776025750981" width="19.43912785297755" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="550.4312313444516" y="427.87140236263707" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                     <title>~/Downloads/001.jpg-2 (127.26 M)</title>
-                    <rect fill="url(#radGrad)" x="564.8943669921714" y="405.833456862323" height="40.3026489356875" width="27.348091112163956" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="566.8943669921714" y="407.833456862323" height="36.3026489356875" width="23.348091112163956" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="577.0684125482534" y="429.5847813301667" font-size="12" font-family="Verdana,monospace"></text>
+                    <rect fill="url(#radGrad2)" x="563.6507952709404" y="403.532601075088" height="41.4776025750981" width="23.43912785297755" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="565.6507952709404" y="405.532601075088" height="37.4776025750981" width="19.43912785297755" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="573.8703591974293" y="427.87140236263707" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                       <title>~/Downloads/XnViewMP-mac.dmg (41.03 M)</title>
-                      <rect fill="url(#radGrad)" x="537.5462758800073" y="446.1361057980105" height="15.888686861049393" width="22.366750738389555" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="539.5462758800073" y="448.1361057980105" height="11.888686861049393" width="18.366750738389555" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="547.2296512492021" y="457.68044922853517" font-size="12" font-family="Verdana,monospace"></text>
+                      <rect fill="url(#radGrad2)" x="540.2116674179629" y="445.0102036501861" height="16.487708091903244" width="19.011881481441037" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="542.2116674179629" y="447.0102036501861" height="12.487708091903244" width="15.011881481441037" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="548.2176081586833" y="456.8540576961377" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                       <title>~/Downloads/iTerm.app (36.09 M)</title>
-                      <rect fill="url(#radGrad)" x="537.5462758800073" y="462.02479265905987" height="13.97520734094013" width="22.366750738389555" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="539.5462758800073" y="464.02479265905987" height="9.97520734094013" width="18.366750738389555" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="547.2296512492021" y="472.61239632952993" font-size="12" font-family="Verdana,monospace"></text>
+                      <rect fill="url(#radGrad2)" x="540.2116674179629" y="461.49791174208934" height="14.502088257910657" width="19.011881481441037" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="542.2116674179629" y="463.49791174208934" height="10.502088257910657" width="15.011881481441037" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="548.2176081586833" y="472.3489558710447" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                         <title>~/Downloads/TelegramMac.dmg (29.05 M)</title>
-                        <rect fill="url(#radGrad)" x="559.9130266183969" y="446.1361057980105" height="17.241297925931235" width="14.591690701031098" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="561.9130266183969" y="448.1361057980105" height="13.241297925931235" width="10.591690701031098" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="565.7088719689125" y="458.3567547609761" font-size="12" font-family="Verdana,monospace"></text>
+                        <rect fill="url(#radGrad2)" x="559.2235488994039" y="445.0102036501861" height="13.793233014798375" width="16.088071330239586" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="561.2235488994039" y="447.0102036501861" height="9.793233014798375" width="12.088071330239586" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="565.7675845645238" y="455.5068201575853" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                         <title>~/Downloads/geany-1.31_osx.dmg (21.27 M)</title>
-                        <rect fill="url(#radGrad)" x="559.9130266183969" y="463.3774037239417" height="12.622596276058289" width="14.591690701031098" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="561.9130266183969" y="465.3774037239417" height="8.622596276058289" width="10.591690701031098" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="565.7088719689125" y="473.2887018619709" font-size="12" font-family="Verdana,monospace"></text>
+                        <rect fill="url(#radGrad2)" x="575.3116202296435" y="445.0102036501861" height="13.793233014798375" width="11.778302894274475" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="577.3116202296435" y="447.0102036501861" height="9.793233014798375" width="7.778302894274475" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="579.7007716767807" y="455.5068201575853" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                           <title>~/Downloads/YandexDisk30.dmg (17.05 M)</title>
-                          <rect fill="url(#radGrad)" x="574.504717319428" y="446.1361057980105" height="14.679218865359132" width="10.058147191441776" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="576.504717319428" y="448.1361057980105" height="10.679218865359132" width="6.058147191441776" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="578.0337909151489" y="457.0757152306901" font-size="12" font-family="Verdana,monospace"></text>
+                          <rect fill="url(#radGrad2)" x="559.2235488994039" y="458.8034366649845" height="9.751273699845058" width="13.355312992190761" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="561.2235488994039" y="460.8034366649845" height="5.751273699845058" width="9.355312992190761" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="564.4012053954993" y="467.27907351490705" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                           <title>~/Downloads/iTerm2-3_3_4.zip (13.02 M)</title>
-                          <rect fill="url(#radGrad)" x="584.5628645108698" y="446.1361057980105" height="14.679218865359132" width="7.679593593465597" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="586.5628645108698" y="448.1361057980105" height="10.679218865359132" width="3.6795935934655972" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="586.9026613076026" y="457.0757152306901" font-size="12" font-family="Verdana,monospace"></text>
+                          <rect fill="url(#radGrad2)" x="559.2235488994039" y="468.55471036482953" height="7.445289635170468" width="13.355312992190761" stroke="rgb(0,0,0)"/>
+                          <rect fill="none" x="561.2235488994039" y="470.55471036482953" height="3.445289635170468" width="9.355312992190761" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                          <text fill="rgb(0,0,0)" text-anchor="" x="564.4012053954993" y="475.8773551824148" font-size="12" font-family="Verdana,monospace"></text>
                         </g>
                         <g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                             <title>~/Downloads/[Ioannis_G._Tollis,_Giuseppe_Di_Battista,_Peter_Ea(BookFi).pdf (10.02 M)</title>
-                            <rect fill="url(#radGrad)" x="574.504717319428" y="460.8153246633696" height="8.927043831871856" width="9.721110795399795" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="576.504717319428" y="462.8153246633696" height="4.927043831871856" width="5.721110795399795" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="577.8652727171279" y="468.87884657930556" font-size="12" font-family="Verdana,monospace"></text>
+                            <rect fill="url(#radGrad2)" x="572.5788618915947" y="458.8034366649845" height="8.97256706870155" width="8.53102728877127" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="574.5788618915947" y="460.8034366649845" height="4.972567068701551" width="4.53102728877127" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="575.3443755359804" y="466.8897201993353" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                             <title>~/Downloads/1-98.jpg (7.02 M)</title>
-                            <rect fill="url(#radGrad)" x="574.504717319428" y="469.74236849524146" height="6.257631504758535" width="9.721110795399795" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="576.504717319428" y="471.74236849524146" height="2.2576315047585354" width="5.721110795399795" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="577.8652727171279" y="476.4711842476207" font-size="12" font-family="Verdana,monospace"></text>
+                            <rect fill="url(#radGrad2)" x="581.1098891803659" y="458.8034366649845" height="8.97256706870155" width="5.98003394355203" stroke="rgb(0,0,0)"/>
+                            <rect fill="none" x="583.1098891803659" y="460.8034366649845" height="4.972567068701551" width="1.98003394355203" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                            <text fill="rgb(0,0,0)" text-anchor="" x="583.1098891803659" y="466.8897201993353" font-size="12" font-family="Verdana,monospace"></text>
                           </g>
                           <g>
                             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                               <title>~/Downloads/OSXFUSE-2.5.4.dmg (5.92 M)</title>
-                              <rect fill="url(#radGrad)" x="584.2258281148278" y="460.8153246633696" height="6.393769631304622" width="8.016629989507578" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="586.2258281148278" y="462.8153246633696" height="2.3937696313046217" width="4.016629989507578" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="586.7341431095815" y="467.61220947902194" font-size="12" font-family="Verdana,monospace"></text>
+                              <rect fill="url(#radGrad2)" x="572.5788618915947" y="467.776003733686" height="8.223996266313975" width="5.497438801107137" stroke="rgb(0,0,0)"/>
+                              <rect fill="none" x="574.5788618915947" y="469.776003733686" height="4.223996266313975" width="1.497438801107137" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                              <text fill="rgb(0,0,0)" text-anchor="" x="574.5788618915947" y="475.48800186684304" font-size="12" font-family="Verdana,monospace"></text>
                             </g>
                             <g>
                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                 <title>~/Downloads/fgraph.svg (1.66 M)</title>
-                                <rect fill="url(#radGrad)" x="584.2258281148278" y="467.20909429467423" height="3.093487220954671" width="4.659050989809316" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="586.2258281148278" y="469.20909429467423" height="-0.9065127790453289" width="0.659050989809316" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="586.2258281148278" y="472.3558379051516" font-size="12" font-family="Verdana,monospace"></text>
+                                <rect fill="url(#radGrad2)" x="578.0763006927018" y="467.776003733686" height="4.77956672503376" width="2.6598169248921977" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="580.0763006927018" y="469.776003733686" height="0.7795667250337601" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="580.0763006927018" y="473.7657870962029" font-size="12" font-family="Verdana,monospace"></text>
                               </g>
                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                 <title>~/Downloads/citytravel-2708100-6250340.pdf (640.00 K)</title>
-                                <rect fill="url(#radGrad)" x="588.8848791046371" y="467.20909429467423" height="3.093487220954671" width="1.7498783060316327" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="590.8848791046371" y="469.20909429467423" height="-0.9065127790453289" width="-2.2501216939683673" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="590.8848791046371" y="472.3558379051516" font-size="12" font-family="Verdana,monospace"></text>
+                                <rect fill="url(#radGrad2)" x="578.0763006927018" y="472.5555704587198" height="1.7951424319375633" width="2.6598169248921977" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="580.0763006927018" y="474.5555704587198" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="580.0763006927018" y="477.0531416746886" font-size="12" font-family="Verdana,monospace"></text>
                               </g>
                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                 <title>~/Downloads/map.osm (588.00 K)</title>
-                                <rect fill="url(#radGrad)" x="590.6347574106687" y="467.20909429467423" height="3.093487220954671" width="1.6077006936666294" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="592.6347574106687" y="469.20909429467423" height="-0.9065127790453289" width="-2.3922993063333706" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="592.6347574106687" y="472.3558379051516" font-size="12" font-family="Verdana,monospace"></text>
+                                <rect fill="url(#radGrad2)" x="578.0763006927018" y="474.35071289065735" height="1.6492871093426515" width="2.6598169248921977" stroke="rgb(0,0,0)"/>
+                                <rect fill="none" x="580.0763006927018" y="476.35071289065735" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                <text fill="rgb(0,0,0)" text-anchor="" x="580.0763006927018" y="478.7753564453287" font-size="12" font-family="Verdana,monospace"></text>
                               </g>
                               <g>
                                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                   <title>~/Downloads/all.png (496.00 K)</title>
-                                  <rect fill="url(#radGrad)" x="584.2258281148278" y="470.3025815156289" height="2.2146705080314177" width="1.8942999749558567" stroke="rgb(0,0,0)"/>
-                                  <rect fill="none" x="586.2258281148278" y="472.3025815156289" height="-1.7853294919685823" width="-2.1057000250441433" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                  <text fill="rgb(0,0,0)" text-anchor="" x="586.2258281148278" y="475.00991676964463" font-size="12" font-family="Verdana,monospace"></text>
+                                  <rect fill="url(#radGrad2)" x="580.736117617594" y="467.776003733686" height="1.5734087657515943" width="2.3518563665198826" stroke="rgb(0,0,0)"/>
+                                  <rect fill="none" x="582.736117617594" y="469.776003733686" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                  <text fill="rgb(0,0,0)" text-anchor="" x="582.736117617594" y="472.1627081165618" font-size="12" font-family="Verdana,monospace"></text>
                                 </g>
                                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                   <title>~/Downloads/stm.pdf (460.00 K)</title>
-                                  <rect fill="url(#radGrad)" x="584.2258281148278" y="472.5172520236603" height="2.0539282937388066" width="1.8942999749558567" stroke="rgb(0,0,0)"/>
-                                  <rect fill="none" x="586.2258281148278" y="474.5172520236603" height="-1.9460717062611934" width="-2.1057000250441433" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                  <text fill="rgb(0,0,0)" text-anchor="" x="586.2258281148278" y="477.1442161705297" font-size="12" font-family="Verdana,monospace"></text>
+                                  <rect fill="url(#radGrad2)" x="583.0879739841139" y="467.776003733686" height="1.5734087657515943" width="2.1811571141112154" stroke="rgb(0,0,0)"/>
+                                  <rect fill="none" x="585.0879739841139" y="469.776003733686" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                  <text fill="rgb(0,0,0)" text-anchor="" x="585.0879739841139" y="472.1627081165618" font-size="12" font-family="Verdana,monospace"></text>
                                 </g>
                                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                  <title>~/Downloads/Booking.com_ &#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1058;&#1077;&#1083;&#1100;_.pdf (320.00 K)</title>
-                                  <rect fill="url(#radGrad)" x="584.2258281148278" y="474.5711803173991" height="1.4288196826008743" width="1.8942999749558567" stroke="rgb(0,0,0)"/>
-                                  <rect fill="none" x="586.2258281148278" y="476.5711803173991" height="-2.5711803173991257" width="-2.1057000250441433" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                  <text fill="rgb(0,0,0)" text-anchor="" x="586.2258281148278" y="478.8855901586996" font-size="12" font-family="Verdana,monospace"></text>
+                                  <title>~/Downloads/Screenshot from 2019-10-19 20-59-47.png (384.00 K)</title>
+                                  <rect fill="url(#radGrad2)" x="585.2691310982251" y="467.776003733686" height="1.5734087657515943" width="1.8207920256928674" stroke="rgb(0,0,0)"/>
+                                  <rect fill="none" x="587.2691310982251" y="469.776003733686" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                  <text fill="rgb(0,0,0)" text-anchor="" x="587.2691310982251" y="472.1627081165618" font-size="12" font-family="Verdana,monospace"></text>
                                 </g>
                                 <g>
                                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                    <title>~/Downloads/memo______Russia_2019_Piter.pdf (336.00 K)</title>
+                                    <rect fill="url(#radGrad2)" x="580.736117617594" y="469.3494124994376" height="1.5217445973239592" width="1.6472829090469077" stroke="rgb(0,0,0)"/>
+                                    <rect fill="none" x="582.736117617594" y="471.3494124994376" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                    <text fill="rgb(0,0,0)" text-anchor="" x="582.736117617594" y="473.7102847980996" font-size="12" font-family="Verdana,monospace"></text>
+                                  </g>
+                                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                    <title>~/Downloads/Booking.com_ &#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1058;&#1077;&#1083;&#1100;_.pdf (320.00 K)</title>
+                                    <rect fill="url(#radGrad2)" x="582.3834005266409" y="469.3494124994376" height="1.5217445973239592" width="1.5688408657590571" stroke="rgb(0,0,0)"/>
+                                    <rect fill="none" x="584.3834005266409" y="471.3494124994376" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                    <text fill="rgb(0,0,0)" text-anchor="" x="584.3834005266409" y="473.7102847980996" font-size="12" font-family="Verdana,monospace"></text>
+                                  </g>
+                                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                     <title>~/Downloads/1-19-1.jpg (320.00 K)</title>
-                                    <rect fill="url(#radGrad)" x="586.1201280897836" y="470.3025815156289" height="1.8991394947903473" width="1.4251786645436368" stroke="rgb(0,0,0)"/>
-                                    <rect fill="none" x="588.1201280897836" y="472.3025815156289" height="-2.1008605052096527" width="-2.574821335456363" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                    <text fill="rgb(0,0,0)" text-anchor="" x="588.1201280897836" y="474.8521512630241" font-size="12" font-family="Verdana,monospace"></text>
+                                    <rect fill="url(#radGrad2)" x="583.9522413924" y="469.3494124994376" height="1.5217445973239592" width="1.5688408657590571" stroke="rgb(0,0,0)"/>
+                                    <rect fill="none" x="585.9522413924" y="471.3494124994376" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                    <text fill="rgb(0,0,0)" text-anchor="" x="585.9522413924" y="473.7102847980996" font-size="12" font-family="Verdana,monospace"></text>
                                   </g>
                                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                     <title>~/Downloads/001-1.jpg (320.00 K)</title>
-                                    <rect fill="url(#radGrad)" x="586.1201280897836" y="472.20172101041925" height="1.8991394947903473" width="1.4251786645436368" stroke="rgb(0,0,0)"/>
-                                    <rect fill="none" x="588.1201280897836" y="474.20172101041925" height="-2.1008605052096527" width="-2.574821335456363" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                    <text fill="rgb(0,0,0)" text-anchor="" x="588.1201280897836" y="476.75129075781444" font-size="12" font-family="Verdana,monospace"></text>
-                                  </g>
-                                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                    <title>~/Downloads/haifa_rus.pdf (320.00 K)</title>
-                                    <rect fill="url(#radGrad)" x="586.1201280897836" y="474.1008605052096" height="1.8991394947903473" width="1.4251786645436368" stroke="rgb(0,0,0)"/>
-                                    <rect fill="none" x="588.1201280897836" y="476.1008605052096" height="-2.1008605052096527" width="-2.574821335456363" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                    <text fill="rgb(0,0,0)" text-anchor="" x="588.1201280897836" y="478.6504302526048" font-size="12" font-family="Verdana,monospace"></text>
+                                    <rect fill="url(#radGrad2)" x="585.521082258159" y="469.3494124994376" height="1.5217445973239592" width="1.5688408657590571" stroke="rgb(0,0,0)"/>
+                                    <rect fill="none" x="587.521082258159" y="471.3494124994376" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                    <text fill="rgb(0,0,0)" text-anchor="" x="587.521082258159" y="473.7102847980996" font-size="12" font-family="Verdana,monospace"></text>
                                   </g>
                                   <g>
                                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                      <title>~/Downloads/Screenshot from 2019-10-19 22-43-24.png (320.00 K)</title>
+                                      <rect fill="url(#radGrad2)" x="580.736117617594" y="470.8711570967616" height="1.709614301079455" width="1.396440770308459" stroke="rgb(0,0,0)"/>
+                                      <rect fill="none" x="582.736117617594" y="472.8711570967616" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                      <text fill="rgb(0,0,0)" text-anchor="" x="582.736117617594" y="475.32596424730133" font-size="12" font-family="Verdana,monospace"></text>
+                                    </g>
+                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                      <title>~/Downloads/haifa_rus.pdf (320.00 K)</title>
+                                      <rect fill="url(#radGrad2)" x="580.736117617594" y="472.58077139784103" height="1.709614301079455" width="1.396440770308459" stroke="rgb(0,0,0)"/>
+                                      <rect fill="none" x="582.736117617594" y="474.58077139784103" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                      <text fill="rgb(0,0,0)" text-anchor="" x="582.736117617594" y="477.0355785483808" font-size="12" font-family="Verdana,monospace"></text>
+                                    </g>
+                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                       <title>~/Downloads/490A7526.jpeg.jpg (320.00 K)</title>
-                                      <rect fill="url(#radGrad)" x="587.5453067543273" y="470.3025815156289" height="1.728673117353992" width="1.5657171166693615" stroke="rgb(0,0,0)"/>
-                                      <rect fill="none" x="589.5453067543273" y="472.3025815156289" height="-2.271326882646008" width="-2.4342828833306385" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                      <text fill="rgb(0,0,0)" text-anchor="" x="589.5453067543273" y="474.7669180743059" font-size="12" font-family="Verdana,monospace"></text>
-                                    </g>
-                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                      <title>~/Downloads/citytravel-2708100-6250342.pdf (320.00 K)</title>
-                                      <rect fill="url(#radGrad)" x="589.1110238709966" y="470.3025815156289" height="1.728673117353992" width="1.5657171166693615" stroke="rgb(0,0,0)"/>
-                                      <rect fill="none" x="591.1110238709966" y="472.3025815156289" height="-2.271326882646008" width="-2.4342828833306385" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                      <text fill="rgb(0,0,0)" text-anchor="" x="591.1110238709966" y="474.7669180743059" font-size="12" font-family="Verdana,monospace"></text>
-                                    </g>
-                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                      <title>~/Downloads/citytravel-2708100-6250343.pdf (320.00 K)</title>
-                                      <rect fill="url(#radGrad)" x="590.676740987666" y="470.3025815156289" height="1.728673117353992" width="1.5657171166693615" stroke="rgb(0,0,0)"/>
-                                      <rect fill="none" x="592.676740987666" y="472.3025815156289" height="-2.271326882646008" width="-2.4342828833306385" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                      <text fill="rgb(0,0,0)" text-anchor="" x="592.676740987666" y="474.7669180743059" font-size="12" font-family="Verdana,monospace"></text>
+                                      <rect fill="url(#radGrad2)" x="580.736117617594" y="474.2903856989205" height="1.709614301079455" width="1.396440770308459" stroke="rgb(0,0,0)"/>
+                                      <rect fill="none" x="582.736117617594" y="476.2903856989205" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                      <text fill="rgb(0,0,0)" text-anchor="" x="582.736117617594" y="478.74519284946024" font-size="12" font-family="Verdana,monospace"></text>
                                     </g>
                                     <g>
                                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                        <title>~/Downloads/citytravel-2708100-6250342.pdf (320.00 K)</title>
+                                        <rect fill="url(#radGrad2)" x="582.1325583879025" y="470.8711570967616" height="1.3484281807467369" width="1.7704874057197912" stroke="rgb(0,0,0)"/>
+                                        <rect fill="none" x="584.1325583879025" y="472.8711570967616" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                        <text fill="rgb(0,0,0)" text-anchor="" x="584.1325583879025" y="475.14537118713497" font-size="12" font-family="Verdana,monospace"></text>
+                                      </g>
+                                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                        <title>~/Downloads/citytravel-2708100-6250343.pdf (320.00 K)</title>
+                                        <rect fill="url(#radGrad2)" x="583.9030457936223" y="470.8711570967616" height="1.3484281807467369" width="1.7704874057197912" stroke="rgb(0,0,0)"/>
+                                        <rect fill="none" x="585.9030457936223" y="472.8711570967616" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                        <text fill="rgb(0,0,0)" text-anchor="" x="585.9030457936223" y="475.14537118713497" font-size="12" font-family="Verdana,monospace"></text>
+                                      </g>
+                                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                         <title>~/Downloads/policy.pdf (256.00 K)</title>
-                                        <rect fill="url(#radGrad)" x="587.5453067543273" y="472.0312546329829" height="1.3229151223390545" width="1.6367569125262662" stroke="rgb(0,0,0)"/>
-                                        <rect fill="none" x="589.5453067543273" y="474.0312546329829" height="-2.6770848776609455" width="-2.363243087473734" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                        <text fill="rgb(0,0,0)" text-anchor="" x="589.5453067543273" y="476.29271219415244" font-size="12" font-family="Verdana,monospace"></text>
-                                      </g>
-                                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                        <title>~/Downloads/Booking_com__&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1048;&#1077;&#1088;&#1091;&#1089;&#1072;&#1083;&#1080;&#1084;_ru.pdf (256.00 K)</title>
-                                        <rect fill="url(#radGrad)" x="587.5453067543273" y="473.35416975532195" height="1.3229151223390545" width="1.6367569125262662" stroke="rgb(0,0,0)"/>
-                                        <rect fill="none" x="589.5453067543273" y="475.35416975532195" height="-2.6770848776609455" width="-2.363243087473734" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                        <text fill="rgb(0,0,0)" text-anchor="" x="589.5453067543273" y="477.6156273164915" font-size="12" font-family="Verdana,monospace"></text>
-                                      </g>
-                                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                        <title>~/Downloads/1-20-1.jpg (256.00 K)</title>
-                                        <rect fill="url(#radGrad)" x="587.5453067543273" y="474.677084877661" height="1.3229151223390545" width="1.6367569125262662" stroke="rgb(0,0,0)"/>
-                                        <rect fill="none" x="589.5453067543273" y="476.677084877661" height="-2.6770848776609455" width="-2.363243087473734" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                        <text fill="rgb(0,0,0)" text-anchor="" x="589.5453067543273" y="478.93854243883055" font-size="12" font-family="Verdana,monospace"></text>
+                                        <rect fill="url(#radGrad2)" x="585.673533199342" y="470.8711570967616" height="1.3484281807467369" width="1.4163899245758103" stroke="rgb(0,0,0)"/>
+                                        <rect fill="none" x="587.673533199342" y="472.8711570967616" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                        <text fill="rgb(0,0,0)" text-anchor="" x="587.673533199342" y="475.14537118713497" font-size="12" font-family="Verdana,monospace"></text>
                                       </g>
                                       <g>
                                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                          <title>~/Downloads/490A7364.jpeg.jpg (192.00 K)</title>
-                                          <rect fill="url(#radGrad)" x="589.1820636668535" y="472.0312546329829" height="1.0612800974221273" width="1.5301972187409092" stroke="rgb(0,0,0)"/>
-                                          <rect fill="none" x="591.1820636668535" y="474.0312546329829" height="-2.9387199025778727" width="-2.469802781259091" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                          <text fill="rgb(0,0,0)" text-anchor="" x="591.1820636668535" y="476.161894681694" font-size="12" font-family="Verdana,monospace"></text>
+                                          <title>~/Downloads/Booking_com__&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1048;&#1077;&#1088;&#1091;&#1089;&#1072;&#1083;&#1080;&#1084;_ru.pdf (256.00 K)</title>
+                                          <rect fill="url(#radGrad2)" x="582.1325583879025" y="472.2195852775083" height="1.3746962627242283" width="1.389325148406897" stroke="rgb(0,0,0)"/>
+                                          <rect fill="none" x="584.1325583879025" y="474.2195852775083" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                          <text fill="rgb(0,0,0)" text-anchor="" x="584.1325583879025" y="476.50693340887045" font-size="12" font-family="Verdana,monospace"></text>
                                         </g>
                                         <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                          <title>~/Downloads/&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1069;&#1080;&#774;&#1083;&#1072;&#1090;_en.pdf (192.00 K)</title>
-                                          <rect fill="url(#radGrad)" x="590.7122608855944" y="472.0312546329829" height="1.0612800974221273" width="1.5301972187409092" stroke="rgb(0,0,0)"/>
-                                          <rect fill="none" x="592.7122608855944" y="474.0312546329829" height="-2.9387199025778727" width="-2.469802781259091" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                          <text fill="rgb(0,0,0)" text-anchor="" x="592.7122608855944" y="476.161894681694" font-size="12" font-family="Verdana,monospace"></text>
+                                          <title>~/Downloads/1-20-1.jpg (256.00 K)</title>
+                                          <rect fill="url(#radGrad2)" x="582.1325583879025" y="473.59428154023254" height="1.3746962627242283" width="1.389325148406897" stroke="rgb(0,0,0)"/>
+                                          <rect fill="none" x="584.1325583879025" y="475.59428154023254" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                          <text fill="rgb(0,0,0)" text-anchor="" x="584.1325583879025" y="477.8816296715947" font-size="12" font-family="Verdana,monospace"></text>
+                                        </g>
+                                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                          <title>~/Downloads/490A7364.jpeg.jpg (192.00 K)</title>
+                                          <rect fill="url(#radGrad2)" x="582.1325583879025" y="474.9689778029568" height="1.0310221970431712" width="1.389325148406897" stroke="rgb(0,0,0)"/>
+                                          <rect fill="none" x="584.1325583879025" y="476.9689778029568" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                          <text fill="rgb(0,0,0)" text-anchor="" x="584.1325583879025" y="479.0844889014784" font-size="12" font-family="Verdana,monospace"></text>
                                         </g>
                                         <g>
                                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                            <title>~/Downloads/&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1069;&#1080;&#774;&#1083;&#1072;&#1090;_en.pdf (192.00 K)</title>
+                                            <rect fill="url(#radGrad2)" x="583.5218835363094" y="472.2195852775083" height="1.2043799109397355" width="1.1893465292029077" stroke="rgb(0,0,0)"/>
+                                            <rect fill="none" x="585.5218835363094" y="474.2195852775083" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                            <text fill="rgb(0,0,0)" text-anchor="" x="585.5218835363094" y="476.42177523297823" font-size="12" font-family="Verdana,monospace"></text>
+                                          </g>
+                                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                             <title>~/Downloads/&#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1069;&#1080;&#774;&#1083;&#1072;&#1090;_ru.pdf (192.00 K)</title>
-                                            <rect fill="url(#radGrad)" x="589.1820636668535" y="473.092534730405" height="1.4537326347974613" width="1.1171021510476749" stroke="rgb(0,0,0)"/>
-                                            <rect fill="none" x="591.1820636668535" y="475.092534730405" height="-2.5462673652025387" width="-2.882897848952325" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                            <text fill="rgb(0,0,0)" text-anchor="" x="591.1820636668535" y="477.4194010478038" font-size="12" font-family="Verdana,monospace"></text>
+                                            <rect fill="url(#radGrad2)" x="584.7112300655123" y="472.2195852775083" height="1.2043799109397355" width="1.1893465292029077" stroke="rgb(0,0,0)"/>
+                                            <rect fill="none" x="586.7112300655123" y="474.2195852775083" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                            <text fill="rgb(0,0,0)" text-anchor="" x="586.7112300655123" y="476.42177523297823" font-size="12" font-family="Verdana,monospace"></text>
                                           </g>
                                           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                                             <title>~/Downloads/Booking.com_ &#1055;&#1086;&#1076;&#1090;&#1074;&#1077;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;_&#1048;&#1077;&#1088;&#1091;&#1089;&#1072;&#1083;&#1080;&#1084;_h.pdf (192.00 K)</title>
-                                            <rect fill="url(#radGrad)" x="589.1820636668535" y="474.5462673652025" height="1.4537326347974613" width="1.1171021510476749" stroke="rgb(0,0,0)"/>
-                                            <rect fill="none" x="591.1820636668535" y="476.5462673652025" height="-2.5462673652025387" width="-2.882897848952325" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                            <text fill="rgb(0,0,0)" text-anchor="" x="591.1820636668535" y="478.87313368260124" font-size="12" font-family="Verdana,monospace"></text>
+                                            <rect fill="url(#radGrad2)" x="585.9005765947152" y="472.2195852775083" height="1.2043799109397355" width="1.1893465292029077" stroke="rgb(0,0,0)"/>
+                                            <rect fill="none" x="587.9005765947152" y="474.2195852775083" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                            <text fill="rgb(0,0,0)" text-anchor="" x="587.9005765947152" y="476.42177523297823" font-size="12" font-family="Verdana,monospace"></text>
                                           </g>
                                           <g>
                                             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                              <title>~/Downloads/490A7368.jpeg.jpg (128.00 K)</title>
-                                              <rect fill="url(#radGrad)" x="590.2991658179012" y="473.092534730405" height="1.1142381855212307" width="0.9716461432170718" stroke="rgb(0,0,0)"/>
-                                              <rect fill="none" x="592.2991658179012" y="475.092534730405" height="-2.8857618144787693" width="-3.0283538567829282" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                              <text fill="rgb(0,0,0)" text-anchor="" x="592.2991658179012" y="477.24965382316566" font-size="12" font-family="Verdana,monospace"></text>
+                                              <title>~/Downloads/doc00573420191018081933_001.jpg (192.00 K)</title>
+                                              <rect fill="url(#radGrad2)" x="583.5218835363094" y="473.42396518844805" height="1.4720198923154157" width="0.9731017049400634" stroke="rgb(0,0,0)"/>
+                                              <rect fill="none" x="585.5218835363094" y="475.42396518844805" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                              <text fill="rgb(0,0,0)" text-anchor="" x="585.5218835363094" y="477.7599751346058" font-size="12" font-family="Verdana,monospace"></text>
                                             </g>
                                             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                              <title>~/Downloads/Booking.com_ &#1048;&#1077;&#1088;&#1091;&#1089;&#1072;&#1083;&#1080;&#1084;_&#1063;&#1077;&#1082;.pdf (128.00 K)</title>
-                                              <rect fill="url(#radGrad)" x="591.2708119611183" y="473.092534730405" height="1.1142381855212307" width="0.9716461432170718" stroke="rgb(0,0,0)"/>
-                                              <rect fill="none" x="593.2708119611183" y="475.092534730405" height="-2.8857618144787693" width="-3.0283538567829282" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                              <text fill="rgb(0,0,0)" text-anchor="" x="593.2708119611183" y="477.24965382316566" font-size="12" font-family="Verdana,monospace"></text>
+                                              <title>~/Downloads/_ (1) (144.00 K)</title>
+                                              <rect fill="url(#radGrad2)" x="583.5218835363094" y="474.89598508076347" height="1.1040149192365334" width="0.9731017049400634" stroke="rgb(0,0,0)"/>
+                                              <rect fill="none" x="585.5218835363094" y="476.89598508076347" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                              <text fill="rgb(0,0,0)" text-anchor="" x="585.5218835363094" y="479.04799254038176" font-size="12" font-family="Verdana,monospace"></text>
                                             </g>
                                             <g>
                                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                <title>~/Downloads/Booking.com_ &#1058;&#1077;&#1083;&#1100;_&#1040;&#1074;&#1080;&#1074;_&#1063;&#1077;&#1082;.pdf (128.00 K)</title>
-                                                <rect fill="url(#radGrad)" x="590.2991658179012" y="474.20677291592625" height="1.171087075313494" width="0.9244788525201102" stroke="rgb(0,0,0)"/>
-                                                <rect fill="none" x="592.2991658179012" y="476.20677291592625" height="-2.828912924686506" width="-3.07552114747989" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                <text fill="rgb(0,0,0)" text-anchor="" x="592.2991658179012" y="478.392316453583" font-size="12" font-family="Verdana,monospace"></text>
+                                                <title>~/Downloads/_ (144.00 K)</title>
+                                                <rect fill="url(#radGrad2)" x="584.4949852412494" y="473.42396518844805" height="0.9273725321586994" width="1.158454410643003" stroke="rgb(0,0,0)"/>
+                                                <rect fill="none" x="586.4949852412494" y="475.42396518844805" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                <text fill="rgb(0,0,0)" text-anchor="" x="586.4949852412494" y="477.4876514545274" font-size="12" font-family="Verdana,monospace"></text>
                                               </g>
                                               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                <title>~/Downloads/photo_2019-10-11 19.52.42.jpeg (68.00 K)</title>
-                                                <rect fill="url(#radGrad)" x="590.2991658179012" y="475.37785999123975" height="0.6221400087602547" width="0.9244788525201102" stroke="rgb(0,0,0)"/>
-                                                <rect fill="none" x="592.2991658179012" y="477.37785999123975" height="-3.3778599912397453" width="-3.07552114747989" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                <text fill="rgb(0,0,0)" text-anchor="" x="592.2991658179012" y="479.2889299956199" font-size="12" font-family="Verdana,monospace"></text>
+                                                <title>~/Downloads/490A7368.jpeg.jpg (128.00 K)</title>
+                                                <rect fill="url(#radGrad2)" x="584.4949852412494" y="474.35133772060675" height="0.8243311396965964" width="1.158454410643003" stroke="rgb(0,0,0)"/>
+                                                <rect fill="none" x="586.4949852412494" y="476.35133772060675" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                <text fill="rgb(0,0,0)" text-anchor="" x="586.4949852412494" y="478.36350329045507" font-size="12" font-family="Verdana,monospace"></text>
+                                              </g>
+                                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                                <title>~/Downloads/Booking.com_ &#1048;&#1077;&#1088;&#1091;&#1089;&#1072;&#1083;&#1080;&#1084;_&#1063;&#1077;&#1082;.pdf (128.00 K)</title>
+                                                <rect fill="url(#radGrad2)" x="584.4949852412494" y="475.17566886030335" height="0.8243311396965964" width="1.158454410643003" stroke="rgb(0,0,0)"/>
+                                                <rect fill="none" x="586.4949852412494" y="477.17566886030335" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                <text fill="rgb(0,0,0)" text-anchor="" x="586.4949852412494" y="479.18783443015167" font-size="12" font-family="Verdana,monospace"></text>
                                               </g>
                                               <g>
                                                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                  <title>~/Downloads/photo_2019-10-11 19.52.41.jpeg (68.00 K)</title>
-                                                  <rect fill="url(#radGrad)" x="591.2236446704213" y="474.20677291592625" height="0.5645344498412328" width="1.0188134339140333" stroke="rgb(0,0,0)"/>
-                                                  <rect fill="none" x="593.2236446704213" y="476.20677291592625" height="-3.435465550158767" width="-2.9811865660859667" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                  <text fill="rgb(0,0,0)" text-anchor="" x="593.2236446704213" y="478.0890401408469" font-size="12" font-family="Verdana,monospace"></text>
+                                                  <title>~/Downloads/Booking.com_ &#1058;&#1077;&#1083;&#1100;_&#1040;&#1074;&#1080;&#1074;_&#1063;&#1077;&#1082;.pdf (128.00 K)</title>
+                                                  <rect fill="url(#radGrad2)" x="585.6534396518924" y="473.42396518844805" height="1.0802726607819864" width="0.883989828938752" stroke="rgb(0,0,0)"/>
+                                                  <rect fill="none" x="587.6534396518924" y="475.42396518844805" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                  <text fill="rgb(0,0,0)" text-anchor="" x="587.6534396518924" y="477.56410151883904" font-size="12" font-family="Verdana,monospace"></text>
+                                                </g>
+                                                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+                                                  <title>~/Downloads/BoardPass_PECHATNOV_2019-OCT-30_SVOLED.pdf (80.00 K)</title>
+                                                  <rect fill="url(#radGrad2)" x="586.5374294808312" y="473.42396518844805" height="1.0802726607819864" width="0.552493643086791" stroke="rgb(0,0,0)"/>
+                                                  <rect fill="none" x="588.5374294808312" y="475.42396518844805" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                  <text fill="rgb(0,0,0)" text-anchor="" x="588.5374294808312" y="477.56410151883904" font-size="12" font-family="Verdana,monospace"></text>
                                                 </g>
                                                 <g>
                                                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                    <title>~/Downloads/0610MOWTLV_PECHATNOV_IURII.pdf (40.00 K)</title>
-                                                    <rect fill="url(#radGrad)" x="591.2236446704213" y="474.7713073657675" height="0.66415817628382" width="0.5094067169569598" stroke="rgb(0,0,0)"/>
-                                                    <rect fill="none" x="593.2236446704213" y="476.7713073657675" height="-3.33584182371618" width="-3.49059328304304" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                    <text fill="rgb(0,0,0)" text-anchor="" x="593.2236446704213" y="478.7033864539094" font-size="12" font-family="Verdana,monospace"></text>
+                                                    <title>~/Downloads/photo_2019-10-11 19.52.42.jpeg (68.00 K)</title>
+                                                    <rect fill="url(#radGrad2)" x="585.6534396518924" y="474.50423784923004" height="0.7063321243574023" width="0.7182417360128284" stroke="rgb(0,0,0)"/>
+                                                    <rect fill="none" x="587.6534396518924" y="476.50423784923004" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                    <text fill="rgb(0,0,0)" text-anchor="" x="587.6534396518924" y="478.45740391140873" font-size="12" font-family="Verdana,monospace"></text>
                                                   </g>
                                                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                    <title>~/Downloads/0610MOWTLV_VRUCHTEL_SERAFIMA.pdf (40.00 K)</title>
-                                                    <rect fill="url(#radGrad)" x="591.7330513873783" y="474.7713073657675" height="0.66415817628382" width="0.5094067169570735" stroke="rgb(0,0,0)"/>
-                                                    <rect fill="none" x="593.7330513873783" y="476.7713073657675" height="-3.33584182371618" width="-3.4905932830429265" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                    <text fill="rgb(0,0,0)" text-anchor="" x="593.7330513873783" y="478.7033864539094" font-size="12" font-family="Verdana,monospace"></text>
+                                                    <title>~/Downloads/photo_2019-10-11 19.52.41.jpeg (68.00 K)</title>
+                                                    <rect fill="url(#radGrad2)" x="586.3716813879053" y="474.50423784923004" height="0.7063321243574023" width="0.7182417360127147" stroke="rgb(0,0,0)"/>
+                                                    <rect fill="none" x="588.3716813879053" y="476.50423784923004" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                                                    <text fill="rgb(0,0,0)" text-anchor="" x="588.3716813879053" y="478.45740391140873" font-size="12" font-family="Verdana,monospace"></text>
                                                   </g>
-                                                  <g>
-                                                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                      <title>~/Downloads/&#1040;&#1042;&#1048;&#1040;&#1041;&#1048;&#1051;&#1045;&#1058;_PECHATNOV_IURII_TuristService_6733778.pdf (36.00 K)</title>
-                                                      <rect fill="url(#radGrad)" x="591.2236446704213" y="475.4354655420513" height="0.564534457948696" width="0.5393718102084222" stroke="rgb(0,0,0)"/>
-                                                      <rect fill="none" x="593.2236446704213" y="477.4354655420513" height="-3.435465542051304" width="-3.460628189791578" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                      <text fill="rgb(0,0,0)" text-anchor="" x="593.2236446704213" y="479.3177327710257" font-size="12" font-family="Verdana,monospace"></text>
-                                                    </g>
-                                                    <g>
-                                                      <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                        <title>~/Downloads/.DS_Store (12.00 K)</title>
-                                                        <rect fill="url(#radGrad)" x="591.7630164806297" y="475.4354655420513" height="0.21170041527017247" width="0.47944162370561116" stroke="rgb(0,0,0)"/>
-                                                        <rect fill="none" x="593.7630164806297" y="477.4354655420513" height="-3.7882995847298275" width="-3.520558376294389" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                        <text fill="rgb(0,0,0)" text-anchor="" x="593.7630164806297" y="479.14131574968644" font-size="12" font-family="Verdana,monospace"></text>
-                                                      </g>
-                                                      <g>
-                                                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                          <title>~/Downloads/.bash_profile.uu 2.cpgz (4.00 K)</title>
-                                                          <rect fill="url(#radGrad)" x="591.7630164806297" y="475.6471659573215" height="0.17641702133926174" width="0.19177664011817797" stroke="rgb(0,0,0)"/>
-                                                          <rect fill="none" x="593.7630164806297" y="477.6471659573215" height="-3.8235829786607383" width="-3.808223359881822" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                          <text fill="rgb(0,0,0)" text-anchor="" x="593.7630164806297" y="479.33537446799113" font-size="12" font-family="Verdana,monospace"></text>
-                                                        </g>
-                                                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                          <title>~/Downloads/1-88.jpg (4.00 K)</title>
-                                                          <rect fill="url(#radGrad)" x="591.7630164806297" y="475.82358297866074" height="0.17641702133926174" width="0.19177664011817797" stroke="rgb(0,0,0)"/>
-                                                          <rect fill="none" x="593.7630164806297" y="477.82358297866074" height="-3.8235829786607383" width="-3.808223359881822" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                          <text fill="rgb(0,0,0)" text-anchor="" x="593.7630164806297" y="479.5117914893304" font-size="12" font-family="Verdana,monospace"></text>
-                                                        </g>
-                                                        <g>
-                                                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                            <title>~/Downloads/.bash_profile.uu.cpgz (4.00 K)</title>
-                                                            <rect fill="url(#radGrad)" x="591.9547931207479" y="475.6471659573215" height="0.23522267597655855" width="0.14383249179365976" stroke="rgb(0,0,0)"/>
-                                                            <rect fill="none" x="593.9547931207479" y="477.6471659573215" height="-3.7647773240234415" width="-3.8561675082063402" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                            <text fill="rgb(0,0,0)" text-anchor="" x="593.9547931207479" y="479.36477729530975" font-size="12" font-family="Verdana,monospace"></text>
-                                                          </g>
-                                                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                            <title>~/Downloads/.bash_profile.uu (4.00 K)</title>
-                                                            <rect fill="url(#radGrad)" x="592.0986256125416" y="475.6471659573215" height="0.23522267597655855" width="0.14383249179377344" stroke="rgb(0,0,0)"/>
-                                                            <rect fill="none" x="594.0986256125416" y="477.6471659573215" height="-3.7647773240234415" width="-3.8561675082062266" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                            <text fill="rgb(0,0,0)" text-anchor="" x="594.0986256125416" y="479.36477729530975" font-size="12" font-family="Verdana,monospace"></text>
-                                                          </g>
-                                                          <g>
-                                                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                                            <title>~/Downloads/1.jpg (4.00 K)</title>
-                                                            <rect fill="url(#radGrad)" x="591.9547931207479" y="475.88238863329804" height="0.11761136670196493" width="0.2876649133567071" stroke="rgb(0,0,0)"/>
-                                                            <rect fill="none" x="593.9547931207479" y="477.88238863329804" height="-3.882388633298035" width="-3.712335086643293" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                                            <text fill="rgb(0,0,0)" text-anchor="" x="593.9547931207479" y="479.541194316649" font-size="12" font-family="Verdana,monospace"></text>
-                                                            </g>
-                                                            <g/>
-                                                          </g>
-                                                        </g>
-                                                      </g>
-                                                    </g>
-                                                  </g>
+                                                  <g/>
                                                 </g>
                                               </g>
                                             </g>
@@ -562,161 +526,65 @@ function g_to_text(e) {
               </g>
             </g>
           </g>
-          <rect fill="none" x="415.8801408774042" y="404.833456862323" height="72.16654313767702" width="177.36231722693117" stroke="rgb(0,0,0)" stroke-width="1"/>
-          <rect fill="none" x="417.8801408774042" y="406.833456862323" height="68.16654313767702" width="173.36231722693117" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+          <rect fill="none" x="436.1570882815027" y="402.532601075088" height="74.467398924912" width="151.93283484241528" stroke="rgb(0,0,0)" stroke-width="1"/>
+          <rect fill="none" x="438.1570882815027" y="404.532601075088" height="70.467398924912" width="147.93283484241528" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
         </g>
         <g>
           <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-            <title>~/datavis (13.53 M)</title>
-            <rect fill="url(#radGrad)" x="593.2424581043354" y="404.833456862323" height="32.44450426753889" width="3.7575418956646445" stroke="rgb(0,0,0)"/>
-            <rect fill="none" x="595.2424581043354" y="406.833456862323" height="28.44450426753889" width="-0.24245810433535553" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-            <text fill="rgb(0,0,0)" text-anchor="" x="595.2424581043354" y="424.65570899609247" font-size="12" font-family="Verdana,monospace"></text>
+            <title>~/datavis (64.69 M)</title>
+            <rect fill="url(#radGrad3)" x="588.089923123918" y="402.532601075088" height="57.75827058340013" width="8.91007687608203" stroke="rgb(0,0,0)"/>
+            <rect fill="none" x="590.089923123918" y="404.532601075088" height="53.75827058340013" width="4.91007687608203" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <text fill="rgb(0,0,0)" text-anchor="" x="591.044961561959" y="435.0117363667881" font-size="12" font-family="Verdana,monospace"></text>
           </g>
           <g>
             <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-              <title>~/.config (10.62 M)</title>
-              <rect fill="url(#radGrad)" x="593.2424581043354" y="437.27796112986186" height="25.457321766504265" width="3.7575418956646445" stroke="rgb(0,0,0)"/>
-              <rect fill="none" x="595.2424581043354" y="439.27796112986186" height="21.457321766504265" width="-0.24245810433535553" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-              <text fill="rgb(0,0,0)" text-anchor="" x="595.2424581043354" y="453.606622013114" font-size="12" font-family="Verdana,monospace"></text>
+              <title>~/.config (10.63 M)</title>
+              <rect fill="url(#radGrad4)" x="588.089923123918" y="460.29087165848813" height="9.48978046358502" width="8.91007687608203" stroke="rgb(0,0,0)"/>
+              <rect fill="none" x="590.089923123918" y="462.29087165848813" height="5.489780463585021" width="4.91007687608203" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+              <text fill="rgb(0,0,0)" text-anchor="" x="591.044961561959" y="468.63576189028066" font-size="12" font-family="Verdana,monospace"></text>
             </g>
             <g>
               <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                <title>~/.ipython (5.07 M)</title>
-                <rect fill="url(#radGrad)" x="593.2424581043354" y="462.73528289636613" height="12.147956707562855" width="3.7575418956646445" stroke="rgb(0,0,0)"/>
-                <rect fill="none" x="595.2424581043354" y="464.73528289636613" height="8.147956707562855" width="-0.24245810433535553" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                <text fill="rgb(0,0,0)" text-anchor="" x="595.2424581043354" y="472.40926125014755" font-size="12" font-family="Verdana,monospace"></text>
+                <title>~/.ipython (7.07 M)</title>
+                <rect fill="url(#radGrad5)" x="588.089923123918" y="469.78065212207315" height="7.21934787792685" width="7.786632393973491" stroke="rgb(0,0,0)"/>
+                <rect fill="none" x="590.089923123918" y="471.78065212207315" height="3.2193478779268503" width="3.786632393973491" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                <text fill="rgb(0,0,0)" text-anchor="" x="590.4832393209047" y="476.9903260610366" font-size="12" font-family="Verdana,monospace"></text>
               </g>
               <g>
                 <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
                   <title>~/Yandex.Disk.localized (480.00 K)</title>
-                  <rect fill="url(#radGrad)" x="593.2424581043354" y="474.883239603929" height="2.1167603960710153" width="1.9951549759166483" stroke="rgb(0,0,0)"/>
-                  <rect fill="none" x="595.2424581043354" y="476.883239603929" height="-1.8832396039289847" width="-2.0048450240833517" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                  <text fill="rgb(0,0,0)" text-anchor="" x="595.2424581043354" y="479.54161980196454" font-size="12" font-family="Verdana,monospace"></text>
+                  <rect fill="url(#radGrad6)" x="595.8765555178915" y="469.78065212207315" height="3.3192403819106744" width="1.123444482108539" stroke="rgb(0,0,0)"/>
+                  <rect fill="none" x="597.8765555178915" y="471.78065212207315" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                  <text fill="rgb(0,0,0)" text-anchor="" x="597.8765555178915" y="475.0402723130285" font-size="12" font-family="Verdana,monospace"></text>
                 </g>
                 <g>
                   <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>~/.matplotlib (108.00 K)</title>
-                    <rect fill="url(#radGrad)" x="595.237613080252" y="474.883239603929" height="0.9185941214497007" width="1.0344444963737942" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="597.237613080252" y="476.883239603929" height="-3.0814058785502993" width="-2.965555503626206" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="597.237613080252" y="478.94253666465386" font-size="12" font-family="Verdana,monospace"></text>
-                  </g>
-                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                    <title>~/Documents (76.00 K)</title>
-                    <rect fill="url(#radGrad)" x="596.2720575766258" y="474.883239603929" height="0.9185941214497007" width="0.727942423374202" stroke="rgb(0,0,0)"/>
-                    <rect fill="none" x="598.2720575766258" y="476.883239603929" height="-3.0814058785502993" width="-3.272057576625798" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                    <text fill="rgb(0,0,0)" text-anchor="" x="598.2720575766258" y="478.94253666465386" font-size="12" font-family="Verdana,monospace"></text>
+                    <title>~/.local (164.00 K)</title>
+                    <rect fill="url(#radGrad7)" x="595.8765555178915" y="473.0998925039838" height="1.134073797152837" width="1.123444482108539" stroke="rgb(0,0,0)"/>
+                    <rect fill="none" x="597.8765555178915" y="475.0998925039838" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                    <text fill="rgb(0,0,0)" text-anchor="" x="597.8765555178915" y="477.26692940256027" font-size="12" font-family="Verdana,monospace"></text>
                   </g>
                   <g>
                     <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>~/.account (72.00 K)</title>
-                      <rect fill="url(#radGrad)" x="595.237613080252" y="475.8018337253787" height="0.6161997983766696" width="1.0280590114206234" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="597.237613080252" y="477.8018337253787" height="-3.3838002016233304" width="-2.9719409885793766" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="597.237613080252" y="479.70993362456704" font-size="12" font-family="Verdana,monospace"></text>
-                    </g>
-                    <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                      <title>~/.local (68.00 K)</title>
-                      <rect fill="url(#radGrad)" x="595.237613080252" y="476.41803352375535" height="0.581966476244645" width="1.0280590114206234" stroke="rgb(0,0,0)"/>
-                      <rect fill="none" x="597.237613080252" y="478.41803352375535" height="-3.418033523755355" width="-2.9719409885793766" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                      <text fill="rgb(0,0,0)" text-anchor="" x="597.237613080252" y="480.30901676187773" font-size="12" font-family="Verdana,monospace"></text>
+                      <title>~/.matplotlib (108.00 K)</title>
+                      <rect fill="url(#radGrad8)" x="595.8765555178915" y="474.23396630113666" height="0.7468290859299032" width="1.123444482108539" stroke="rgb(0,0,0)"/>
+                      <rect fill="none" x="597.8765555178915" y="476.23396630113666" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                      <text fill="rgb(0,0,0)" text-anchor="" x="597.8765555178915" y="478.20738084410164" font-size="12" font-family="Verdana,monospace"></text>
                     </g>
                     <g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>~/.DS_Store (16.00 K)</title>
-                        <rect fill="url(#radGrad)" x="596.2656720916726" y="475.8018337253787" height="0.3354865372365339" width="0.4196159476156254" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="598.2656720916726" y="477.8018337253787" height="-3.664513462763466" width="-3.5803840523843746" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="598.2656720916726" y="479.569576993997" font-size="12" font-family="Verdana,monospace"></text>
+                        <title>~/Documents (76.00 K)</title>
+                        <rect fill="url(#radGrad9)" x="595.8765555178915" y="474.98079538706656" height="1.0234324510891497" width="0.5769039232449131" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="597.8765555178915" y="476.98079538706656" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="597.8765555178915" y="479.09251161261113" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
                       <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                        <title>~/training (12.00 K)</title>
-                        <rect fill="url(#radGrad)" x="596.6852880392883" y="475.8018337253787" height="0.3354865372365339" width="0.31471196071174745" stroke="rgb(0,0,0)"/>
-                        <rect fill="none" x="598.6852880392883" y="477.8018337253787" height="-3.664513462763466" width="-3.6852880392882525" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                        <text fill="rgb(0,0,0)" text-anchor="" x="598.6852880392883" y="479.569576993997" font-size="12" font-family="Verdana,monospace"></text>
+                        <title>~/.account (72.00 K)</title>
+                        <rect fill="url(#radGrad10)" x="596.4534594411364" y="474.98079538706656" height="1.0234324510891497" width="0.5465405588636258" stroke="rgb(0,0,0)"/>
+                        <rect fill="none" x="598.4534594411364" y="476.98079538706656" height="0" width="0" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+                        <text fill="rgb(0,0,0)" text-anchor="" x="598.4534594411364" y="479.09251161261113" font-size="12" font-family="Verdana,monospace"></text>
                       </g>
-                      <g>
-                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>~/.ssh (12.00 K)</title>
-                          <rect fill="url(#radGrad)" x="596.2656720916726" y="476.1373202626152" height="0.3354865372365339" width="0.31471196071174745" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="598.2656720916726" y="478.1373202626152" height="-3.664513462763466" width="-3.6852880392882525" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="598.2656720916726" y="479.9050635312335" font-size="12" font-family="Verdana,monospace"></text>
-                        </g>
-                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>~/jup (8.00 K)</title>
-                          <rect fill="url(#radGrad)" x="596.5803840523844" y="476.1373202626152" height="0.3354865372365339" width="0.20980797380786953" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="598.5803840523844" y="478.1373202626152" height="-3.664513462763466" width="-3.7901920261921305" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="598.5803840523844" y="479.9050635312335" font-size="12" font-family="Verdana,monospace"></text>
-                        </g>
-                        <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                          <title>~/Desktop (8.00 K)</title>
-                          <rect fill="url(#radGrad)" x="596.7901920261922" y="476.1373202626152" height="0.3354865372365339" width="0.20980797380786953" stroke="rgb(0,0,0)"/>
-                          <rect fill="none" x="598.7901920261922" y="478.1373202626152" height="-3.664513462763466" width="-3.7901920261921305" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                          <text fill="rgb(0,0,0)" text-anchor="" x="598.7901920261922" y="479.9050635312335" font-size="12" font-family="Verdana,monospace"></text>
-                        </g>
-                        <g>
-                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>~/.yandex (8.00 K)</title>
-                            <rect fill="url(#radGrad)" x="596.2656720916726" y="476.47280679985175" height="0.263596600074095" width="0.2670282947412943" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="598.2656720916726" y="478.47280679985175" height="-3.736403399925905" width="-3.7329717052587057" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="598.2656720916726" y="480.2046050998888" font-size="12" font-family="Verdana,monospace"></text>
-                          </g>
-                          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                            <title>~/.jupyter (8.00 K)</title>
-                            <rect fill="url(#radGrad)" x="596.2656720916726" y="476.73640339992585" height="0.26359660007415187" width="0.2670282947412943" stroke="rgb(0,0,0)"/>
-                            <rect fill="none" x="598.2656720916726" y="478.73640339992585" height="-3.736403399925848" width="-3.7329717052587057" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                            <text fill="rgb(0,0,0)" text-anchor="" x="598.2656720916726" y="480.46820169996295" font-size="12" font-family="Verdana,monospace"></text>
-                          </g>
-                          <g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>~/.CFUserTextEncoding (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="596.5327003864139" y="476.47280679985175" height="0.22593989563972627" width="0.15576653786206407" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="598.5327003864139" y="478.47280679985175" height="-3.7740601043602737" width="-3.844233462137936" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="598.5327003864139" y="480.18577674767164" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>~/.cups (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="596.688466924276" y="476.47280679985175" height="0.22593989563972627" width="0.15576653786206407" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="598.688466924276" y="478.47280679985175" height="-3.7740601043602737" width="-3.844233462137936" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="598.688466924276" y="480.18577674767164" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                              <title>~/.bash_profile (4.00 K)</title>
-                              <rect fill="url(#radGrad)" x="596.844233462138" y="476.47280679985175" height="0.22593989563972627" width="0.15576653786206407" stroke="rgb(0,0,0)"/>
-                              <rect fill="none" x="598.844233462138" y="478.47280679985175" height="-3.7740601043602737" width="-3.844233462137936" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                              <text fill="rgb(0,0,0)" text-anchor="" x="598.844233462138" y="480.18577674767164" font-size="12" font-family="Verdana,monospace"></text>
-                            </g>
-                            <g>
-                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                <title>~/.python_history (4.00 K)</title>
-                                <rect fill="url(#radGrad)" x="596.5327003864139" y="476.6987466954915" height="0.15062665225428873" width="0.23364972122794825" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="598.5327003864139" y="478.6987466954915" height="-3.8493733477457113" width="-3.7663502787720518" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="598.5327003864139" y="480.3740600216187" font-size="12" font-family="Verdana,monospace"></text>
-                              </g>
-                              <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                <title>~/.gitconfig (4.00 K)</title>
-                                <rect fill="url(#radGrad)" x="596.5327003864139" y="476.84937334774577" height="0.15062665225423189" width="0.23364972122794825" stroke="rgb(0,0,0)"/>
-                                <rect fill="none" x="598.5327003864139" y="478.84937334774577" height="-3.849373347745768" width="-3.7663502787720518" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                <text fill="rgb(0,0,0)" text-anchor="" x="598.5327003864139" y="480.5246866738729" font-size="12" font-family="Verdana,monospace"></text>
-                              </g>
-                              <g>
-                                <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                  <title>~/.bash_history (4.00 K)</title>
-                                  <rect fill="url(#radGrad)" x="596.7663501076419" y="476.6987466954915" height="0.1506265419320698" width="0.23364989235813027" stroke="rgb(0,0,0)"/>
-                                  <rect fill="none" x="598.7663501076419" y="478.6987466954915" height="-3.84937345806793" width="-3.7663501076418697" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                  <text fill="rgb(0,0,0)" text-anchor="" x="598.7663501076419" y="480.37405996645754" font-size="12" font-family="Verdana,monospace"></text>
-                                </g>
-                                <g>
-                                  <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
-                                    <title>~/.gtk-bookmarks (4.00 K)</title>
-                                    <rect fill="url(#radGrad)" x="596.7663501076419" y="476.84937323742355" height="0.1506267625764508" width="0.2336495500979936" stroke="rgb(0,0,0)"/>
-                                    <rect fill="none" x="598.7663501076419" y="478.84937323742355" height="-3.849373237423549" width="-3.7663504499020064" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
-                                    <text fill="rgb(0,0,0)" text-anchor="" x="598.7663501076419" y="480.5246866187118" font-size="12" font-family="Verdana,monospace"></text>
-                                  </g>
-                                  <g/>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
+                      <g/>
                     </g>
                   </g>
                 </g>

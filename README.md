@@ -69,21 +69,22 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
 
     {'~/.config': 11132928,
      '~/Music': 0,
-     '~/datavis': 14188544,
+     '~/datavis': 60121088,
      '~/.DS_Store': 16384,
      '~/VirtualBox VMs': {'~/VirtualBox VMs/.DS_Store': 8192,
       '~/VirtualBox VMs/Ubuntu': {'~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev': 8192,
        '~/VirtualBox VMs/Ubuntu/Snapshots': 0,
-       '~/VirtualBox VMs/Ubuntu/Ubuntu.vdi': 22776119296,
-       '~/VirtualBox VMs/Ubuntu/Logs': 786432,
+       '~/VirtualBox VMs/Ubuntu/Ubuntu.vdi': 24118296576,
+       '~/VirtualBox VMs/Ubuntu/Logs': 983040,
        '~/VirtualBox VMs/Ubuntu/Ubuntu.vbox': 8192}},
      '~/.CFUserTextEncoding': 4096,
      '~/Yandex.Disk.localized': 491520,
-     '~/.local': 69632,
+     '~/.local': 114688,
      '~/training': 12288,
      '~/Pictures': 0,
      '~/jup': 8192,
-     '~/.ipython': 5312512,
+     '~/.ipython': 6361088,
+     '~/vbox': 0,
      '~/Desktop': 8192,
      '~/Library': 0,
      '~/.matplotlib': 110592,
@@ -131,8 +132,11 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
       '~/Downloads/490A7364.jpeg.jpg': 196608,
       '~/Downloads/Booking_com__Подтверждение_Иерусалим_ru.pdf': 262144,
       '~/Downloads/001-1.jpg': 327680,
+      '~/Downloads/_ (1)': 147456,
       '~/Downloads/1-20-1.jpg': 262144,
       '~/Downloads/.bash_profile.uu 2.cpgz': 4096,
+      '~/Downloads/Screenshot from 2019-10-19 22-43-24.png': 327680,
+      '~/Downloads/_': 147456,
       '~/Downloads/geany-1.31_osx.dmg': 22298624,
       '~/Downloads/Подтверждение_Эйлат_en.pdf': 196608,
       '~/Downloads/TelegramMac.dmg': 30457856,
@@ -154,16 +158,18 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
       '~/Downloads/2019.10 Дайвинг в Эйлате': 235941888,
       '~/Downloads/iTerm.app': 37842944,
       '~/Downloads/XnViewMP-mac.dmg': 43024384,
+      '~/Downloads/Screenshot from 2019-10-19 20-59-47.png': 393216,
       '~/Downloads/citytravel-2708100-6250342.pdf': 327680,
       '~/Downloads/stm.pdf': 471040,
       '~/Downloads/Booking.com_ Подтверждение_Иерусалим_h.pdf': 196608,
       '~/Downloads/citytravel-2708100-6250343.pdf': 327680,
       '~/Downloads/jm_tra-3sUmvkixf7Y.zip': 252608512,
       '~/Downloads/1.jpg': 4096,
-      '~/Downloads/citytravel-2708100-6250340.pdf': 655360},
+      '~/Downloads/citytravel-2708100-6250340.pdf': 655360,
+      '~/Downloads/doc00573420191018081933_001.jpg': 196608},
      '~/.python_history': 4096,
      '~/.gitconfig': 4096,
-     '~/.bash_history': 4096,
+     '~/.bash_history': 8192,
      '~/.gtk-bookmarks': 4096,
      '~/.account': 73728}
 
@@ -172,8 +178,8 @@ display(list_dir_with_sizes_recursive("/Users/pechatnov/VirtualBox VMs/"))
     {'/Users/pechatnov/VirtualBox VMs/.DS_Store': 8192,
      '/Users/pechatnov/VirtualBox VMs/Ubuntu': {'/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev': 8192,
       '/Users/pechatnov/VirtualBox VMs/Ubuntu/Snapshots': 0,
-      '/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vdi': 22776119296,
-      '/Users/pechatnov/VirtualBox VMs/Ubuntu/Logs': 786432,
+      '/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vdi': 24118296576,
+      '/Users/pechatnov/VirtualBox VMs/Ubuntu/Logs': 983040,
       '/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vbox': 8192}}
 
 
@@ -456,7 +462,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 17150 bytes to README.md
+    [NbConvertApp] Writing 16967 bytes to README.md
 
 
 
@@ -465,7 +471,7 @@ test_on_dir("..", "./parent.svg")
 ```
 
     [NbConvertApp] Converting notebook tree_map_1.ipynb to html
-    [NbConvertApp] Writing 351296 bytes to index.html
+    [NbConvertApp] Writing 350894 bytes to index.html
 
 
 
