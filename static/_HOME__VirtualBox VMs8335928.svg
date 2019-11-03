@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="500" width="600" onload="init(evt)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style type="text/css">.func_g:hover { stroke:black; stroke-width:0.5; cursor:pointer; }</style>
+  <script type="text/ecmascript"><![CDATA[
+var details;
+function init(evt) {
+    details = document.getElementById("details").firstChild;
+}
+
+// mouse-over for info
+function s(node) { // show
+    info = g_to_text(node);
+    find_child_cat(node, "rect", "select_frame").setAttribute("visibility", "visible");
+
+    details.nodeValue = "Rectangle: " + info;
+}
+function c(node) { // clear
+    find_child_cat(node, "rect", "select_frame").setAttribute("visibility", "hidden");
+    details.nodeValue = ' ';
+}
+
+// mouse-over for visible selection of outer frames
+function s_outer(node) {
+    find_child_cat(node, "rect", "select_frame").setAttribute("visibility", "visible");
+}
+function c_outer(node) {
+    find_child_cat(node, "rect", "select_frame").setAttribute("visibility", "hidden");
+}
+
+
+function find_child(parent, name, attr) {
+    var children = parent.childNodes;
+    for (var i=0; i<children.length;i++) {
+        if (children[i].tagName == name)
+            return (attr != undefined) ? children[i].attributes[attr].value : children[i];
+    }
+    return;
+}
+function find_child_cat(parent, name, cat) {
+    var children = parent.childNodes;
+    for (var i=0; i<children.length;i++) {
+        if (children[i].tagName == name && (cat == undefined || (children[i].attributes["category"] != undefined && children[i].attributes["category"].value == cat)))
+            return children[i];
+    }
+    return;
+}
+
+function g_to_text(e) {
+    var text = find_child(e, "title").firstChild.nodeValue;
+    return (text)
+}
+]]></script>
+  <defs>
+    <radialGradient id="radGrad0">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(210, 230, 241)"/>
+    </radialGradient>
+    <radialGradient id="radGrad1">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(143, 187, 217)"/>
+    </radialGradient>
+    <radialGradient id="radGrad2">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(216, 239, 196)"/>
+    </radialGradient>
+    <radialGradient id="radGrad3">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(153, 207, 149)"/>
+    </radialGradient>
+    <radialGradient id="radGrad4">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(253, 204, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad5">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(254, 223, 183)"/>
+    </radialGradient>
+    <radialGradient id="radGrad6">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(255, 191, 127)"/>
+    </radialGradient>
+    <radialGradient id="radGrad7">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(228, 216, 234)"/>
+    </radialGradient>
+    <radialGradient id="radGrad8">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(180, 158, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad9">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(255, 255, 204)"/>
+    </radialGradient>
+    <radialGradient id="radGrad10">
+      <stop offset="0%" stop-color="rgb(255, 255, 255)"/>
+      <stop offset="100%" stop-color="rgb(216, 172, 147)"/>
+    </radialGradient>
+  </defs>
+  <text fill="rgb(0,0,0)" text-anchor="" x="0" y="495" font-size="12" font-family="Verdana,monospace" id="details"> </text>
+  <rect fill="none" x="0" y="0" height="480" width="600" stroke="rgb(235,235,0)" stroke-width="1"/>
+  <g>
+    <a href="/browse/~/VirtualBox%20VMs/Ubuntu?main_frame=mf_434570665356545254" target="mf_434570665356545254">
+      <g onmouseover="s_outer(this)" onmouseout="c_outer(this)">
+        <g>
+          <g class="func_g" onmouseover="s(this)" onmouseout="c(this)">
+            <title>~/VirtualBox VMs/Ubuntu/Ubuntu.vdi (25.20 G)</title>
+            <rect fill="url(#radGrad0)" x="4" y="4" height="472.0" width="591.9722234582619" stroke="rgb(0,0,0)"/>
+            <rect fill="none" x="6" y="6" height="468.0" width="587.9722234582619" stroke="rgb(255, 0, 0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+            <text fill="rgb(0,0,0)" text-anchor="" x="268.4861117291309" y="243.6" font-size="12" font-family="Verdana,monospace">Ubuntu.vdi</text>
+          </g>
+          <g/>
+        </g>
+        <rect fill="none" x="3" y="3" height="474.0" width="593.9998201950067" stroke="rgb(0,0,0)" stroke-width="1"/>
+        <rect fill="none" x="5" y="5" height="470.0" width="589.9998201950067" stroke="rgb(255,0,0)" stroke-width="2" visibility="hidden" category="select_frame"/>
+      </g>
+    </a>
+    <g/>
+  </g>
+</svg>
