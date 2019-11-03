@@ -1,9 +1,16 @@
 # Squarified treemap inspired by Flamegraph
 
+* Репозиторий https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io
+* HTML view (там отображаются картинки) https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/
+
+
 * Реализуем squarified treemap 
 * Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки
-* В качестве примера использую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры внизу)
-* Верхний уровень иерархии в treemap подкрашен категориальной палитрой из ColorBrewer2.
+* В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу html-ки)
+* Картинки интерактивные! (нёо нормально отображаются только в html)
+* Верхний уровень иерархии в treemap подкрашен категориальными цветами.
+
+* В flask-приложении картинки кликабельные и доступна навигация по файловой системе. Таким образом можно отрисовать treemap для любой директории (почти, на самом деле только в ~/..., но это скорее вопрос безопасности).
 
 
 ```python
@@ -551,20 +558,20 @@ finally:
 
 
 ```python
-!jupyter nbconvert tree_map_1.ipynb --to markdown --output README
+!jupyter nbconvert tree_map_2.ipynb --to markdown --output README
 ```
 
-    [NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-    [NbConvertApp] Writing 17251 bytes to README.md
+    [NbConvertApp] Converting notebook tree_map_2.ipynb to markdown
+    [NbConvertApp] Writing 19152 bytes to README.md
 
 
 
 ```python
-!jupyter nbconvert tree_map_1.ipynb --to html --output index
+!jupyter nbconvert tree_map_2.ipynb --to html --output index
 ```
 
-    [NbConvertApp] Converting notebook tree_map_1.ipynb to html
-    [NbConvertApp] Writing 351200 bytes to index.html
+    [NbConvertApp] Converting notebook tree_map_2.ipynb to html
+    [NbConvertApp] Writing 379998 bytes to index.html
 
 
 
