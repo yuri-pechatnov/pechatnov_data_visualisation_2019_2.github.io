@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>tree_map_1</title>
+<title>tree_map_2</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13078,14 +13078,10 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Squarified-treemap-inspired-by-Flamegraph">Squarified treemap inspired by Flamegraph<a class="anchor-link" href="#Squarified-treemap-inspired-by-Flamegraph">&#182;</a></h1><ul>
-<li>Репозиторий <a href="https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io">https://github.com/yuri-pechatnov/pechatnov_data_visualisation_2019_2.github.io</a></li>
-<li>HTML view (там отображаются картинки) <a href="https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/">https://yuri-pechatnov.github.io/pechatnov_data_visualisation_2019_2.github.io/</a></li>
-</ul>
-<ul>
 <li>Реализуем squarified treemap </li>
 <li>Заимствую логику из реализации flamegraph для того, чтобы выводить полное название области в нижней части svg-картинки</li>
-<li>В качестве примера исползую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры есть тут внизу html-ки)</li>
-<li>Картинки интерактивные! (но нормально отображаются только в html)</li>
+<li>В качестве примера использую размер файлов в файловой системе, как самый очевидный и полезный кейс (примеры внизу)</li>
+<li>Верхний уровень иерархии в treemap подкрашен категориальной палитрой из ColorBrewer2.</li>
 </ul>
 
 </div>
@@ -13097,6 +13093,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">SVG</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="k">import</span> <span class="n">check_output</span>
 </pre></div>
 
     </div>
@@ -13106,36 +13103,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="k">import</span> <span class="n">check_output</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build file sizes tree</span>
+<span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">shlex</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 
@@ -13148,10 +13120,12 @@ div#notebook {
         <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;:( &quot;</span> <span class="o">+</span> <span class="n">cmd</span><span class="p">)</span>
         <span class="k">return</span> <span class="mi">0</span>
 
+    
 <span class="k">def</span> <span class="nf">list_dir_with_sizes</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="n">entries</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
     <span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">]</span>
     <span class="k">return</span> <span class="p">[(</span><span class="n">p</span><span class="p">,</span> <span class="n">get_du_result</span><span class="p">(</span><span class="n">p</span><span class="p">))</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">]</span>
+
 
 <span class="k">def</span> <span class="nf">list_dir_with_sizes_recursive</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
     <span class="n">entries</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">list_dir_with_sizes</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
@@ -13169,173 +13143,42 @@ div#notebook {
         <span class="n">extend</span><span class="p">(</span><span class="n">entries</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">entries</span>
-
-<span class="n">display</span><span class="p">(</span><span class="n">list_dir_with_sizes_recursive</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">list_dir_with_sizes_recursive</span><span class="p">(</span><span class="s2">&quot;/Users/pechatnov/VirtualBox VMs/&quot;</span><span class="p">))</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_text output_subarea ">
-<pre>{&#39;~/.config&#39;: 11132928,
- &#39;~/Music&#39;: 0,
- &#39;~/datavis&#39;: 60121088,
- &#39;~/.DS_Store&#39;: 16384,
- &#39;~/VirtualBox VMs&#39;: {&#39;~/VirtualBox VMs/.DS_Store&#39;: 8192,
-  &#39;~/VirtualBox VMs/Ubuntu&#39;: {&#39;~/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev&#39;: 8192,
-   &#39;~/VirtualBox VMs/Ubuntu/Snapshots&#39;: 0,
-   &#39;~/VirtualBox VMs/Ubuntu/Ubuntu.vdi&#39;: 24118296576,
-   &#39;~/VirtualBox VMs/Ubuntu/Logs&#39;: 983040,
-   &#39;~/VirtualBox VMs/Ubuntu/Ubuntu.vbox&#39;: 8192}},
- &#39;~/.CFUserTextEncoding&#39;: 4096,
- &#39;~/Yandex.Disk.localized&#39;: 491520,
- &#39;~/.local&#39;: 114688,
- &#39;~/training&#39;: 12288,
- &#39;~/Pictures&#39;: 0,
- &#39;~/jup&#39;: 8192,
- &#39;~/.ipython&#39;: 6361088,
- &#39;~/vbox&#39;: 0,
- &#39;~/Desktop&#39;: 8192,
- &#39;~/Library&#39;: 0,
- &#39;~/.matplotlib&#39;: 110592,
- &#39;~/.cups&#39;: 4096,
- &#39;~/Public&#39;: 0,
- &#39;~/.yandex&#39;: 8192,
- &#39;~/.ssh&#39;: 12288,
- &#39;~/Movies&#39;: 0,
- &#39;~/.Trash&#39;: {&#39;~/.Trash/geany&#39;: 16384,
-  &#39;~/.Trash/Ubuntu.zip&#39;: 8288980992,
-  &#39;~/.Trash/.DS_Store&#39;: 12288,
-  &#39;~/.Trash/IMG_5280.JPG&#39;: 2555904,
-  &#39;~/.Trash/all&#39;: 8192,
-  &#39;~/.Trash/best&#39;: 0,
-  &#39;~/.Trash/IMG_5304.JPG&#39;: 2023424,
-  &#39;~/.Trash/Karabiner-Elements-12.7.0.dmg&#39;: 9502720,
-  &#39;~/.Trash/geany.zip&#39;: 12288,
-  &#39;~/.Trash/osxfuse-3.10.3.dmg&#39;: 7217152,
-  &#39;~/.Trash/IMG_5303.JPG&#39;: 2289664,
-  &#39;~/.Trash/IMG_5249.JPG&#39;: 2473984,
-  &#39;~/.Trash/sshfs-2.5.0.pkg&#39;: 3743744,
-  &#39;~/.Trash/virtualbox-6-0-8-build-130520.dmg&#39;: 151584768},
- &#39;~/.ipynb_checkpoints&#39;: 0,
- &#39;~/.jupyter&#39;: 8192,
- &#39;~/Documents&#39;: 77824,
- &#39;~/.bash_profile&#39;: 4096,
- &#39;~/Downloads&#39;: {&#39;~/Downloads/map.osm&#39;: 602112,
-  &#39;~/Downloads/iTerm2-3_3_4.zip&#39;: 13647872,
-  &#39;~/Downloads/0610MOWTLV_PECHATNOV_IURII.pdf&#39;: 40960,
-  &#39;~/Downloads/001.jpg&#39;: 133439488,
-  &#39;~/Downloads/fgraph.svg&#39;: 1744896,
-  &#39;~/Downloads/Booking.com_ Подтверждение_Тель_.pdf&#39;: 327680,
-  &#39;~/Downloads/490A7368.jpeg.jpg&#39;: 131072,
-  &#39;~/Downloads/.DS_Store&#39;: 12288,
-  &#39;~/Downloads/АВИАБИЛЕТ_PECHATNOV_IURII_TuristService_6733778.pdf&#39;: 36864,
-  &#39;~/Downloads/OSXFUSE-2.5.4.dmg&#39;: 6205440,
-  &#39;~/Downloads/0610MOWTLV_VRUCHTEL_SERAFIMA.pdf&#39;: 40960,
-  &#39;~/Downloads/policy.pdf&#39;: 262144,
-  &#39;~/Downloads/001.jpg.zip&#39;: 134348800,
-  &#39;~/Downloads/.localized&#39;: 0,
-  &#39;~/Downloads/001.jpg-1&#39;: 133439488,
-  &#39;~/Downloads/all.png&#39;: 507904,
-  &#39;~/Downloads/photo_2019-10-11 19.52.42.jpeg&#39;: 69632,
-  &#39;~/Downloads/1-19-1.jpg&#39;: 327680,
-  &#39;~/Downloads/490A7364.jpeg.jpg&#39;: 196608,
-  &#39;~/Downloads/Booking_com__Подтверждение_Иерусалим_ru.pdf&#39;: 262144,
-  &#39;~/Downloads/001-1.jpg&#39;: 327680,
-  &#39;~/Downloads/_ (1)&#39;: 147456,
-  &#39;~/Downloads/1-20-1.jpg&#39;: 262144,
-  &#39;~/Downloads/.bash_profile.uu 2.cpgz&#39;: 4096,
-  &#39;~/Downloads/Screenshot from 2019-10-19 22-43-24.png&#39;: 327680,
-  &#39;~/Downloads/_&#39;: 147456,
-  &#39;~/Downloads/geany-1.31_osx.dmg&#39;: 22298624,
-  &#39;~/Downloads/Подтверждение_Эйлат_en.pdf&#39;: 196608,
-  &#39;~/Downloads/TelegramMac.dmg&#39;: 30457856,
-  &#39;~/Downloads/Booking.com_ Иерусалим_Чек.pdf&#39;: 131072,
-  &#39;~/Downloads/YandexDisk30.dmg&#39;: 17874944,
-  &#39;~/Downloads/haifa_rus.pdf&#39;: 327680,
-  &#39;~/Downloads/490A7526.jpeg.jpg&#39;: 327680,
-  &#39;~/Downloads/1-88.jpg&#39;: 4096,
-  &#39;~/Downloads/1-98.jpg&#39;: 7364608,
-  &#39;~/Downloads/001.jpg-1.zip&#39;: 134348800,
-  &#39;~/Downloads/Booking.com_ Тель_Авив_Чек.pdf&#39;: 131072,
-  &#39;~/Downloads/001.jpg-2.zip&#39;: 134348800,
-  &#39;~/Downloads/001.jpg-2&#39;: 133439488,
-  &#39;~/Downloads/.bash_profile.uu.cpgz&#39;: 4096,
-  &#39;~/Downloads/photo_2019-10-11 19.52.41.jpeg&#39;: 69632,
-  &#39;~/Downloads/.bash_profile.uu&#39;: 4096,
-  &#39;~/Downloads/[Ioannis_G._Tollis,_Giuseppe_Di_Battista,_Peter_Ea(BookFi).pdf&#39;: 10506240,
-  &#39;~/Downloads/Подтверждение_Эйлат_ru.pdf&#39;: 196608,
-  &#39;~/Downloads/2019.10 Дайвинг в Эйлате&#39;: 235941888,
-  &#39;~/Downloads/iTerm.app&#39;: 37842944,
-  &#39;~/Downloads/XnViewMP-mac.dmg&#39;: 43024384,
-  &#39;~/Downloads/Screenshot from 2019-10-19 20-59-47.png&#39;: 393216,
-  &#39;~/Downloads/citytravel-2708100-6250342.pdf&#39;: 327680,
-  &#39;~/Downloads/stm.pdf&#39;: 471040,
-  &#39;~/Downloads/Booking.com_ Подтверждение_Иерусалим_h.pdf&#39;: 196608,
-  &#39;~/Downloads/citytravel-2708100-6250343.pdf&#39;: 327680,
-  &#39;~/Downloads/jm_tra-3sUmvkixf7Y.zip&#39;: 252608512,
-  &#39;~/Downloads/1.jpg&#39;: 4096,
-  &#39;~/Downloads/citytravel-2708100-6250340.pdf&#39;: 655360,
-  &#39;~/Downloads/doc00573420191018081933_001.jpg&#39;: 196608},
- &#39;~/.python_history&#39;: 4096,
- &#39;~/.gitconfig&#39;: 4096,
- &#39;~/.bash_history&#39;: 8192,
- &#39;~/.gtk-bookmarks&#39;: 4096,
- &#39;~/.account&#39;: 73728}</pre>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-
-<div class="output_text output_subarea ">
-<pre>{&#39;/Users/pechatnov/VirtualBox VMs/.DS_Store&#39;: 8192,
- &#39;/Users/pechatnov/VirtualBox VMs/Ubuntu&#39;: {&#39;/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vbox-prev&#39;: 8192,
-  &#39;/Users/pechatnov/VirtualBox VMs/Ubuntu/Snapshots&#39;: 0,
-  &#39;/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vdi&#39;: 24118296576,
-  &#39;/Users/pechatnov/VirtualBox VMs/Ubuntu/Logs&#39;: 983040,
-  &#39;/Users/pechatnov/VirtualBox VMs/Ubuntu/Ubuntu.vbox&#39;: 8192}}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">lxml</span> <span class="k">import</span> <span class="n">etree</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Draw TreeMap</span>
+<span class="kn">from</span> <span class="nn">lxml</span> <span class="k">import</span> <span class="n">etree</span>
 <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">log2</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randrange</span>
 
 <span class="k">class</span> <span class="nc">SquarifiedTreeMap</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">short_names</span><span class="o">=</span><span class="p">{},</span> <span class="n">eps</span><span class="o">=</span><span class="mf">0.001</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">short_names</span><span class="o">=</span><span class="p">{},</span> <span class="n">urls</span><span class="o">=</span><span class="p">{},</span> <span class="n">url_target</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">0.001</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_tree</span> <span class="o">=</span> <span class="n">tree</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_size</span> <span class="o">=</span> <span class="n">size</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_short_names</span> <span class="o">=</span> <span class="n">short_names</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_urls</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">urls</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">}</span>  <span class="c1"># only top level</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_url_target</span> <span class="o">=</span> <span class="n">url_target</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_eps</span> <span class="o">=</span> <span class="n">eps</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_image_eps</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">js_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#a6cee3&#39;</span><span class="p">,</span><span class="s1">&#39;#1f78b4&#39;</span><span class="p">,</span><span class="s1">&#39;#b2df8a&#39;</span><span class="p">,</span><span class="s1">&#39;#33a02c&#39;</span><span class="p">,</span><span class="s1">&#39;#fb9a99&#39;</span><span class="p">,</span><span class="s1">&#39;#fdbf6f&#39;</span><span class="p">,</span><span class="s1">&#39;#ff7f00&#39;</span><span class="p">,</span><span class="s1">&#39;#cab2d6&#39;</span><span class="p">,</span><span class="s1">&#39;#6a3d9a&#39;</span><span class="p">,</span><span class="s1">&#39;#ffff99&#39;</span><span class="p">,</span><span class="s1">&#39;#b15928&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="mi">16</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">],</span> <span class="mi">16</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">7</span><span class="p">],</span> <span class="mi">16</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">js_colors</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span> <span class="o">=</span> <span class="p">[</span><span class="nb">tuple</span><span class="p">(((</span><span class="n">cp</span> <span class="o">+</span> <span class="mi">255</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">cp</span> <span class="ow">in</span> <span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_i_color</span> <span class="o">=</span> <span class="mi">0</span>
+        
+    <span class="k">def</span> <span class="nf">_next_color</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;url(#radGrad</span><span class="si">%d</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_i_color</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_i_color</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">c</span> 
     
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">_svg_xml_to_string</span><span class="p">(</span><span class="n">etree_elem</span><span class="p">):</span>
@@ -13360,8 +13203,8 @@ div#notebook {
                       <span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span>
             <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="n">fill</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> 
-            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> 
-            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> 
+            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])),</span> 
+            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])),</span> 
             <span class="s2">&quot;stroke&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">color</span><span class="p">)),</span>
             <span class="s2">&quot;stroke-width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">width</span><span class="p">),</span>
         <span class="p">}</span>
@@ -13386,26 +13229,25 @@ div#notebook {
         <span class="n">elem</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
         <span class="k">return</span> <span class="n">elem</span>
 
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">_svg_eventful_rect_elem</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">short_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_svg_eventful_rect_elem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">fill_color</span><span class="o">=</span><span class="s2">&quot;url(#radGrad0)&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">short_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
         <span class="n">root</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span>
             <span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;func_g&quot;</span><span class="p">,</span> <span class="s2">&quot;onmouseover&quot;</span><span class="p">:</span> <span class="s2">&quot;s(this)&quot;</span><span class="p">,</span> <span class="s2">&quot;onmouseout&quot;</span><span class="p">:</span> <span class="s2">&quot;c(this)&quot;</span><span class="p">})</span>
         <span class="n">title_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">)</span>
         <span class="n">title_elem</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
         <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title_elem</span><span class="p">)</span>
         <span class="n">rect_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span>  
-            <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="s2">&quot;url(#radGrad)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="n">fill_color</span><span class="p">,</span>
             <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> 
-            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> 
-            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> 
+            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])),</span> 
+            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])),</span> 
             <span class="s2">&quot;stroke&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">color</span><span class="p">))</span>
         <span class="p">})</span>
         <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rect_elem</span><span class="p">)</span>
         <span class="n">rect_selection_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span>  
             <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span> 
             <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">),</span> 
-            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">4</span><span class="p">),</span> 
-            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">4</span><span class="p">),</span> 
+            <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)),</span> 
+            <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">4</span><span class="p">)),</span> 
             <span class="s2">&quot;stroke&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(255, 0, 0)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;stroke-width&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
             <span class="s2">&quot;visibility&quot;</span><span class="p">:</span> <span class="s2">&quot;hidden&quot;</span><span class="p">,</span>
@@ -13458,23 +13300,28 @@ div#notebook {
         <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{:0.2f}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">order</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)),</span> <span class="n">_suffixes</span><span class="p">[</span><span class="n">order</span><span class="p">])</span>
 
     
-    <span class="k">def</span> <span class="nf">_draw_one</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">rect</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_draw_one</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
             <span class="n">root</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span>
                 <span class="s2">&quot;onmouseover&quot;</span><span class="p">:</span> <span class="s2">&quot;s_outer(this)&quot;</span><span class="p">,</span> <span class="s2">&quot;onmouseout&quot;</span><span class="p">:</span> <span class="s2">&quot;c_outer(this)&quot;</span><span class="p">})</span>
             <span class="n">nrect</span> <span class="o">=</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
             <span class="n">nrect2</span> <span class="o">=</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
 
-            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">nrect</span><span class="p">))</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">nrect</span><span class="p">,</span> <span class="n">color</span><span class="p">))</span>
             <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_svg_rect_elem</span><span class="p">(</span><span class="n">rect</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
-            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_svg_rect_elem</span><span class="p">(</span><span class="n">nrect2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-                                      <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                                      <span class="n">category</span><span class="o">=</span><span class="s2">&quot;select_frame&quot;</span><span class="p">))</span>
-            <span class="k">return</span> <span class="n">root</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_svg_rect_elem</span><span class="p">(</span>
+                <span class="n">nrect2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s2">&quot;select_frame&quot;</span><span class="p">))</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">sfx</span> <span class="o">=</span> <span class="s2">&quot; (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_human_readable_int</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_svg_eventful_rect_elem</span><span class="p">(</span><span class="n">rect</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">name</span> <span class="o">+</span> <span class="n">sfx</span><span class="p">,</span>
-                                          <span class="n">short_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_short_names</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_svg_eventful_rect_elem</span><span class="p">(</span>
+                <span class="n">rect</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">name</span> <span class="o">+</span> <span class="n">sfx</span><span class="p">,</span> <span class="n">fill_color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+                <span class="n">short_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_short_names</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_urls</span><span class="p">:</span>
+            <span class="n">a_element</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_urls</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_url_target</span><span class="p">})</span>
+            <span class="n">a_element</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+            <span class="n">root</span> <span class="o">=</span> <span class="n">a_element</span>
+        <span class="k">return</span> <span class="n">root</span>
     
     <span class="k">def</span> <span class="nf">_calc_area</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
@@ -13482,7 +13329,7 @@ div#notebook {
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_calc_area</span><span class="p">(</span><span class="n">subtree</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">subtree</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">items</span><span class="p">()),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eps</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">rect</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
         <span class="n">root</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">root</span>
@@ -13492,7 +13339,7 @@ div#notebook {
         <span class="n">w</span> <span class="o">=</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">h</span> <span class="o">=</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 
-        <span class="k">if</span> <span class="n">w</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eps</span> <span class="ow">or</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eps</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">w</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_eps</span> <span class="ow">or</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">_image_eps</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">root</span>
 
         <span class="n">areas</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_calc_area</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">]</span>
@@ -13508,8 +13355,8 @@ div#notebook {
                 <span class="n">new_x</span> <span class="o">=</span> <span class="n">old_x</span> <span class="o">+</span> <span class="n">a</span> <span class="o">/</span> <span class="n">h0</span>
                 <span class="n">ar</span> <span class="o">=</span> <span class="p">((</span><span class="n">old_x</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> <span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">h0</span><span class="p">))</span>
                 <span class="n">old_x</span> <span class="o">=</span> <span class="n">new_x</span>
-                <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw_one</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">subtree</span><span class="p">,</span> <span class="n">ar</span><span class="p">))</span>
-            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">sh</span><span class="p">:]),</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">h0</span><span class="p">),</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+                <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw_one</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">subtree</span><span class="p">,</span> <span class="n">ar</span><span class="p">,</span> <span class="n">color</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_next_color</span><span class="p">()))</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">sh</span><span class="p">:]),</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">h0</span><span class="p">),</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">color</span><span class="p">))</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">w0</span><span class="p">,</span> <span class="n">sh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_split_areas</span><span class="p">(</span><span class="n">areas</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
             <span class="n">old_y</span> <span class="o">=</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
@@ -13517,8 +13364,8 @@ div#notebook {
                 <span class="n">new_y</span> <span class="o">=</span> <span class="n">old_y</span> <span class="o">+</span> <span class="n">a</span> <span class="o">/</span> <span class="n">w0</span>
                 <span class="n">ar</span> <span class="o">=</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">old_y</span><span class="p">),</span> <span class="p">(</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">w0</span><span class="p">,</span> <span class="n">new_y</span><span class="p">))</span>
                 <span class="n">old_y</span> <span class="o">=</span> <span class="n">new_y</span>
-                <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw_one</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">subtree</span><span class="p">,</span> <span class="n">ar</span><span class="p">))</span>
-            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">sh</span><span class="p">:]),</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">w0</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+                <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw_one</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">subtree</span><span class="p">,</span> <span class="n">ar</span><span class="p">,</span> <span class="n">color</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_next_color</span><span class="p">()))</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">tree</span><span class="p">[</span><span class="n">sh</span><span class="p">:]),</span> <span class="p">((</span><span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">w0</span><span class="p">,</span> <span class="n">rect</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> <span class="n">rect</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">color</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">root</span>
 
     <span class="k">def</span> <span class="nf">draw_all</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dest</span><span class="p">):</span>
@@ -13533,10 +13380,11 @@ div#notebook {
         <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">script_elem</span><span class="p">)</span>
 
         <span class="n">defs_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;defs&#39;</span><span class="p">)</span>
-        <span class="n">radial_grad_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;radialGradient&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;radGrad&quot;</span><span class="p">})</span>
-        <span class="n">radial_grad_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;0%&quot;</span><span class="p">,</span> <span class="s2">&quot;stop-color&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(255, 230, 230)&quot;</span><span class="p">}))</span>
-        <span class="n">radial_grad_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="s2">&quot;stop-color&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(255, 255, 255)&quot;</span><span class="p">}))</span>
-        <span class="n">defs_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">radial_grad_elem</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_colors</span><span class="p">):</span>
+            <span class="n">radial_grad_elem</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;radialGradient&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;radGrad</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">i</span><span class="p">})</span>
+            <span class="n">radial_grad_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;0%&quot;</span><span class="p">,</span> <span class="s2">&quot;stop-color&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(255, 255, 255)&quot;</span><span class="p">}))</span>
+            <span class="n">radial_grad_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;stop&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;100%&quot;</span><span class="p">,</span> <span class="s2">&quot;stop-color&quot;</span><span class="p">:</span> <span class="s2">&quot;rgb(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">c</span><span class="p">))}))</span>
+            <span class="n">defs_elem</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">radial_grad_elem</span><span class="p">)</span>
         <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">defs_elem</span><span class="p">)</span>
 
         <span class="n">bottom_line_elem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_svg_text_elem</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">5</span><span class="p">),</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">elem_id</span><span class="o">=</span><span class="s2">&quot;details&quot;</span><span class="p">)</span>
@@ -13548,14 +13396,14 @@ div#notebook {
         <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rect_element</span><span class="p">)</span>
 
         <span class="n">map_rect</span> <span class="o">=</span> <span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="n">map_size</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">3</span><span class="p">,</span> <span class="n">map_size</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">3</span><span class="p">))</span>
-        <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tree</span><span class="p">,</span> <span class="n">map_rect</span><span class="p">))</span>
-
+        <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_tree</span><span class="p">,</span> <span class="n">map_rect</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+        
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dest</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_svg_xml_to_string</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>
 
 
 <span class="k">def</span> <span class="nf">show_svg</span><span class="p">(</span><span class="n">svg_path</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;object type=&quot;image/svg+xml&quot; data=&quot;</span><span class="si">{path}</span><span class="s1">&quot;&gt; ??? &lt;/object&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">svg_path</span><span class="p">)))</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;object type=&quot;image/svg+xml&quot; data=&quot;</span><span class="si">{path}</span><span class="s1">&quot;&gt; &lt;/object&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">svg_path</span><span class="p">)))</span>
         
 <span class="k">def</span> <span class="nf">get_all_keys</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
@@ -13572,7 +13420,7 @@ div#notebook {
     <span class="n">SquarifiedTreeMap</span><span class="p">(</span><span class="n">dirs</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="n">short_names</span><span class="o">=</span><span class="n">short_names</span><span class="p">)</span><span class="o">.</span><span class="n">draw_all</span><span class="p">(</span><span class="n">svg_fname</span><span class="p">)</span>
     <span class="n">show_svg</span><span class="p">(</span><span class="n">svg_fname</span><span class="p">)</span>
     
-<span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;~/Downloads&quot;</span><span class="p">,</span> <span class="s2">&quot;./downloads.svg&quot;</span><span class="p">)</span>
+<span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;~/Downloads&quot;</span><span class="p">,</span> <span class="s2">&quot;./static/downloads.svg&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13590,7 +13438,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<object type="image/svg+xml" data="./downloads.svg"> ??? </object>
+<object type="image/svg+xml" data="./static/downloads.svg"> </object>
 </div>
 
 </div>
@@ -13601,10 +13449,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;~/&quot;</span><span class="p">,</span> <span class="s2">&quot;./home.svg&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;~/&quot;</span><span class="p">,</span> <span class="s2">&quot;./static/home.svg&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13622,7 +13470,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<object type="image/svg+xml" data="./home.svg"> ??? </object>
+<object type="image/svg+xml" data="./static/home.svg"> </object>
 </div>
 
 </div>
@@ -13633,10 +13481,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;./parent.svg&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_on_dir</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;./static/parent.svg&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13654,7 +13502,7 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea ">
-<object type="image/svg+xml" data="./parent.svg"> ??? </object>
+<object type="image/svg+xml" data="./static/parent.svg"> </object>
 </div>
 
 </div>
@@ -13662,10 +13510,283 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1045;&#1097;&#1077;-&#1073;&#1086;&#1083;&#1100;&#1096;&#1077;-&#1080;&#1085;&#1090;&#1077;&#1088;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1089;&#1090;&#1080;-&#1089;-&#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102;-Flask">&#1045;&#1097;&#1077; &#1073;&#1086;&#1083;&#1100;&#1096;&#1077; &#1080;&#1085;&#1090;&#1077;&#1088;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1089;&#1090;&#1080; &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; Flask<a class="anchor-link" href="#&#1045;&#1097;&#1077;-&#1073;&#1086;&#1083;&#1100;&#1096;&#1077;-&#1080;&#1085;&#1090;&#1077;&#1088;&#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1089;&#1090;&#1080;-&#1089;-&#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102;-Flask">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">flask</span>
+<span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="kn">from</span> <span class="nn">logging.config</span> <span class="k">import</span> <span class="n">dictConfig</span>
+
+<span class="n">dictConfig</span><span class="p">({</span>
+    <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;file.handler&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;logging.handlers.RotatingFileHandler&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;filename&#39;</span><span class="p">:</span> <span class="s1">&#39;test.log&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;maxBytes&#39;</span><span class="p">:</span> <span class="mi">4194304</span><span class="p">,</span>  <span class="c1"># 4 MB</span>
+            <span class="s1">&#39;backupCount&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;loggers&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;werkzeug&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;handlers&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;file.handler&#39;</span><span class="p">],</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">})</span>
+
+<span class="n">port</span> <span class="o">=</span> <span class="mi">8999</span>
+
+<span class="c1"># Create the webapp</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">flask</span><span class="o">.</span><span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+        
+<span class="k">def</span> <span class="nf">exception_verbose</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">safe_f</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">b</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">extype</span><span class="p">,</span> <span class="n">ex</span><span class="p">,</span> <span class="n">tb</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+            <span class="n">formatted</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exception</span><span class="p">(</span><span class="n">extype</span><span class="p">,</span> <span class="n">ex</span><span class="p">,</span> <span class="n">tb</span><span class="p">)</span>
+
+            <span class="n">err_template</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;!DOCTYPE html&gt;</span>
+<span class="s2">&lt;html&gt;</span>
+<span class="s2">    &lt;h1&gt; ERROR &lt;/h1&gt;</span>
+<span class="s2">    &lt;pre&gt;</span>
+<span class="si">{err_text}</span><span class="s2"></span>
+<span class="s2">    &lt;/pre&gt;</span>
+<span class="s2">&lt;/html&gt;</span>
+<span class="s2">            &quot;&quot;&quot;</span>
+            <span class="n">err</span> <span class="o">=</span> <span class="n">err_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">err_text</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">formatted</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">err</span><span class="p">,</span> <span class="mi">500</span>
+    <span class="k">return</span> <span class="n">safe_f</span>
+    
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/render/&lt;path:subpath&gt;&quot;</span><span class="p">)</span>
+<span class="nd">@exception_verbose</span>
+<span class="k">def</span> <span class="nf">images</span><span class="p">(</span><span class="n">subpath</span><span class="p">):</span>
+    <span class="n">svg_fname</span> <span class="o">=</span> <span class="n">subpath</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">,</span> <span class="s2">&quot;_HOME_&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">randrange</span><span class="p">(</span><span class="mi">100500000</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;.svg&#39;</span>
+    <span class="n">dirs</span> <span class="o">=</span> <span class="n">list_dir_with_sizes_recursive</span><span class="p">(</span><span class="n">subpath</span><span class="p">)</span>
+    <span class="n">short_names</span> <span class="o">=</span> <span class="p">{</span><span class="n">d</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">get_all_keys</span><span class="p">(</span><span class="n">dirs</span><span class="p">)}</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">{</span><span class="n">d</span><span class="p">:</span> <span class="n">flask</span><span class="o">.</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&quot;browse&quot;</span><span class="p">,</span> <span class="n">subpath</span><span class="o">=</span><span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;?&quot;</span> <span class="o">+</span> <span class="n">flask</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">query_string</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dirs</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">d</span><span class="p">)))}</span>
+    <span class="n">SquarifiedTreeMap</span><span class="p">(</span>
+        <span class="n">dirs</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="n">short_names</span><span class="o">=</span><span class="n">short_names</span><span class="p">,</span> <span class="n">urls</span><span class="o">=</span><span class="n">urls</span><span class="p">,</span> 
+        <span class="n">url_target</span><span class="o">=</span><span class="n">flask</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;main_frame&#39;</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">draw_all</span><span class="p">(</span><span class="s2">&quot;./static/&quot;</span> <span class="o">+</span> <span class="n">svg_fname</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">flask</span><span class="o">.</span><span class="n">redirect</span><span class="p">(</span><span class="n">flask</span><span class="o">.</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;static&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">svg_fname</span><span class="p">))</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/browse/&lt;path:subpath&gt;&#39;</span><span class="p">)</span>
+<span class="nd">@exception_verbose</span>
+<span class="k">def</span> <span class="nf">browse</span><span class="p">(</span><span class="n">subpath</span><span class="p">):</span>    
+    <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">subpath</span><span class="p">))</span>
+    
+    <span class="n">template</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&lt;!DOCTYPE html&gt;</span>
+<span class="s2">    &lt;html&gt;</span>
+<span class="s2">    &lt;table width=&quot;100%&quot;&gt;</span>
+<span class="s2">    &lt;tr&gt;</span>
+<span class="s2">    &lt;td align=&quot;top&quot; valign=&quot;top&quot;&gt;</span>
+<span class="s2">            &lt;h4&gt; Dir: </span><span class="si">{subpath}</span><span class="s2"> &lt;/h4&gt;</span>
+<span class="s2">            </span><span class="si">{refs}</span><span class="s2"></span>
+<span class="s2">    &lt;/td&gt;</span>
+<span class="s2">    &lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;</span>
+<span class="s2">        &lt;object type=&quot;image/svg+xml&quot; data=&quot;</span><span class="si">{img_url}</span><span class="s2">?</span><span class="si">{query_params}</span><span class="s2">&quot;&gt; &lt;/object&gt;</span>
+<span class="s2">    &lt;/td&gt;</span>
+<span class="s2">    &lt;/tr&gt;</span>
+<span class="s2">    &lt;/table&gt;</span>
+<span class="s2">    &lt;/html&gt;</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">sort_key</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">p</span><span class="p">)),</span> <span class="n">p</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">),</span> <span class="n">p</span><span class="p">)</span>
+        
+    <span class="n">parent_subpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">subpath</span><span class="p">)</span> <span class="k">if</span> <span class="n">subpath</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">else</span> <span class="kc">None</span>
+    <span class="n">query_params</span> <span class="o">=</span> <span class="n">flask</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">query_string</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+    
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subpath</span><span class="o">=</span><span class="n">subpath</span><span class="p">,</span> <span class="n">query_params</span><span class="o">=</span><span class="n">query_params</span><span class="p">,</span>
+                             <span class="n">img_url</span><span class="o">=</span><span class="n">flask</span><span class="o">.</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;images&#39;</span><span class="p">,</span> <span class="n">subpath</span><span class="o">=</span><span class="n">subpath</span><span class="p">),</span>
+                             <span class="n">refs</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+        <span class="p">(</span>
+            <span class="p">[</span>
+                <span class="s1">&#39;&lt;a href=&quot;/browse/</span><span class="si">{parent_subpath}</span><span class="s1">?</span><span class="si">{query_params}</span><span class="s1">&quot;&gt; .. &lt;/a&gt; &lt;br&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">parent_subpath</span><span class="o">=</span><span class="n">parent_subpath</span><span class="p">,</span> <span class="n">subpath</span><span class="o">=</span><span class="n">subpath</span><span class="p">,</span> <span class="n">query_params</span><span class="o">=</span><span class="n">query_params</span><span class="p">)</span>
+            <span class="p">]</span> <span class="k">if</span> <span class="n">parent_subpath</span> <span class="k">else</span> <span class="p">[]</span>
+        <span class="p">)</span> <span class="o">+</span> <span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;&lt;a href=&quot;/browse/</span><span class="si">{subpath}</span><span class="s1">/</span><span class="si">{f}</span><span class="s1">?</span><span class="si">{query_params}</span><span class="s1">&quot;&gt; </span><span class="si">{f}</span><span class="s1"> &lt;/a&gt; &lt;br&gt;&#39;</span>
+             <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">f</span><span class="p">))</span> <span class="k">else</span>
+             <span class="s1">&#39;</span><span class="si">{f}</span><span class="s1"> &lt;br&gt;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subpath</span><span class="o">=</span><span class="n">subpath</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="n">f</span><span class="p">,</span> <span class="n">query_params</span><span class="o">=</span><span class="n">query_params</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">key</span><span class="o">=</span><span class="n">sort_key</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">))</span>
+    <span class="k">return</span> <span class="n">answer</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/iframe&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">main_frame</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    &lt;!DOCTYPE html&quot;&gt;</span>
+<span class="s1">    &lt;html&gt;</span>
+<span class="s1">    &lt;head&gt;</span>
+<span class="s1">        &lt;iframe src=&quot;</span><span class="si">{url}</span><span class="s1">?main_frame=</span><span class="si">{main_frame}</span><span class="s1">&quot; name=&quot;</span><span class="si">{main_frame}</span><span class="s1">&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;no&quot;&gt;</span>
+<span class="s1">            Problems with iframe</span>
+<span class="s1">        &lt;/iframe&gt;</span>
+<span class="s1">    &lt;/head&gt;</span>
+
+<span class="s1">    &lt;body&gt;</span>
+<span class="s1">    &lt;/body&gt;</span>
+<span class="s1">    &lt;/html&gt;</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">flask</span><span class="o">.</span><span class="n">url_for</span><span class="p">(</span><span class="s2">&quot;browse&quot;</span><span class="p">,</span> <span class="n">subpath</span><span class="o">=</span><span class="s2">&quot;~&quot;</span><span class="p">),</span> 
+               <span class="n">main_frame</span><span class="o">=</span><span class="s2">&quot;mf_</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">randrange</span><span class="p">(</span><span class="mf">1e18</span><span class="p">))</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">root</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">flask</span><span class="o">.</span><span class="n">redirect</span><span class="p">(</span><span class="n">flask</span><span class="o">.</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;browse&#39;</span><span class="p">,</span> <span class="n">subpath</span><span class="o">=</span><span class="s2">&quot;~&quot;</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">post_info</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">port</span><span class="p">):</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        &lt;iframe src=&quot;http://localhost:</span><span class="si">{port}</span><span class="s1">/iframe&quot; height=&quot;800&quot; width=&quot;100%&quot; align=&quot;left&quot;&gt;</span>
+<span class="s1">        Ваш браузер не поддерживает плавающие фреймы!</span>
+<span class="s1">        &lt;/iframe&gt;</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">)))</span>
+        
+
+<span class="n">info_thread</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">info_thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">post_info</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+    <span class="n">info_thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;WERKZEUG_RUN_MAIN&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;true&quot;</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">info_thread</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">info_thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>INFO:werkzeug: * Running on http://127.0.0.1:8999/ (Press CTRL+C to quit)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+        <iframe src="http://localhost:8999/iframe" height="800" width="100%" align="left">
+        Ваш браузер не поддерживает плавающие фреймы!
+        </iframe>
+    
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:39] &#34;GET /iframe HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:39] &#34;GET /browse/~?main_frame=mf_434570665356545254 HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:40] &#34;GET /render/~?main_frame=mf_434570665356545254 HTTP/1.1&#34; 302 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:40] &#34;GET /static/_HOME_89411507.svg HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:42] &#34;GET /browse/~/VirtualBox%20VMs?main_frame=mf_434570665356545254 HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:42] &#34;GET /render/~/VirtualBox%20VMs?main_frame=mf_434570665356545254 HTTP/1.1&#34; 302 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:42] &#34;GET /static/_HOME__VirtualBox%20VMs8335928.svg HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:44] &#34;GET /browse/~?main_frame=mf_434570665356545254 HTTP/1.1&#34; 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:45] &#34;GET /render/~?main_frame=mf_434570665356545254 HTTP/1.1&#34; 302 -
+INFO:werkzeug:127.0.0.1 - - [03/Nov/2019 14:39:45] &#34;GET /static/_HOME_41327360.svg HTTP/1.1&#34; 200 -
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert tree_map_1.ipynb --to markdown --output README
@@ -13686,7 +13807,7 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook tree_map_1.ipynb to markdown
-[NbConvertApp] Writing 16967 bytes to README.md
+[NbConvertApp] Writing 17251 bytes to README.md
 </pre>
 </div>
 </div>
@@ -13697,7 +13818,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert tree_map_1.ipynb --to html --output index
@@ -13718,11 +13839,24 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook tree_map_1.ipynb to html
-[NbConvertApp] Writing 350894 bytes to index.html
+[NbConvertApp] Writing 351200 bytes to index.html
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
